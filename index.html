@@ -1,1255 +1,1526 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#F0C463">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#F0C463" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/ab_styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/ab_styles.css" />
 
     <title>Abbabill</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="ab_main_nav">
-        <div class="ab_top_nav">
-            <div class="container">
-                <div class="menus">
-                    <div class="left">
-                        <span class="d-none d-md-block">Download App</span>
-                        <a href="" class="_icon_download_app">
-                            <i class="bi bi-google-play"></i>
-                        </a>
-                        <a href="" class="_icon_download_app">
-                            <i class="bi bi-apple"></i>
-                        </a>
-                    </div>
-                    <div class="right">
-                        <div class="menu">
-                            <div class="item">
-                                <a href="#" class="link">
-                                    <div class="_ic">
-                                        <div class="badge_ic"></div>
-                                        <i class="bi bi-bell"></i>
-                                    </div>
-                                    <span class="d-none d-md-flex">Notifikasi</span>
-                                </a>
-                            </div>
-                            <div class="mx-1">|</div>
-                            <div class="item">
-                                <a href="#" class="link">
-                                    <div class="_ic">
-                                        <i class="bi bi-question-circle"></i>
-                                    </div>
-                                    <span class="d-none d-md-flex">Bantuan</span>
-                                </a>
-                            </div>
-                            <div class="mx-1">|</div>
-                            <div class="item">
-                                <span>Ikuti Kami</span>
-                                <a href="#" class="ms-1"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="ms-1"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="ms-1"><i class="bi bi-tiktok"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="ab_top_nav">
+        <div class="container">
+          <div class="menus">
+            <div class="left">
+              <span class="d-none d-md-block">Download App</span>
+              <a href="" class="_icon_download_app">
+                <i class="bi bi-google-play"></i>
+              </a>
+              <a href="" class="_icon_download_app">
+                <i class="bi bi-apple"></i>
+              </a>
             </div>
-        </div>
-        <div class="ab_bottom_nav">
-            <div class="container">
-                <div class="menus">
-                    <div class="left">
-                        <div class="logo">
-                            <img class="logo-full d-none d-md-block" src="/assets/img/main_logo.png" alt="">
-                            <img class="logo-img d-block d-md-none" src="/assets/img/logo-img.png" alt="">
-                        </div>
+            <div class="right">
+              <div class="menu">
+                <div class="item">
+                  <a href="#" class="link">
+                    <div class="_ic">
+                      <div class="badge_ic"></div>
+                      <i class="bi bi-bell"></i>
                     </div>
-                    <div class="center">
-                        <div class="search-wrapper">
-                            <input type="text" placeholder="cari...">
-                            <button class="ic_search">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="menu-right">
-                            <div class="item d-none d-lg-flex">
-                                <div class="_ic_box">
-                                    <div class="count-item">88</div>
-                                    <i class="bi bi-heart-fill"></i>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="_ic_box">
-                                    <div class="count-item">90</div>
-                                    <i class="bi bi-cart-fill"></i>
-                                </div>
-                            </div>
-                            <div class="d-none d-lg-flex item">
-                                <a href="#" class="profile">
-                                    <img src="/assets/img/default_user.png" alt="">
-                                    <span>Jhon Paul Ivan</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="d-none d-md-flex">Notifikasi</span>
+                  </a>
                 </div>
+                <div class="mx-1">|</div>
+                <div class="item">
+                  <a href="#" class="link">
+                    <div class="_ic">
+                      <i class="bi bi-question-circle"></i>
+                    </div>
+                    <span class="d-none d-md-flex">Bantuan</span>
+                  </a>
+                </div>
+                <div class="mx-1">|</div>
+                <div class="item">
+                  <span>Ikuti Kami</span>
+                  <a href="#" class="ms-1"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="ms-1"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="ms-1"><i class="bi bi-tiktok"></i></a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="ab_bottom_nav">
+        <div class="container">
+          <div class="menus">
+            <div class="left">
+              <div class="logo">
+                <img
+                  class="logo-full d-none d-md-block"
+                  src="/assets/img/main_logo.png"
+                  alt=""
+                />
+                <img
+                  class="logo-img d-block d-md-none"
+                  src="/assets/img/logo-img.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="center">
+              <div class="search-wrapper">
+                <input type="text" placeholder="cari..." />
+                <button class="ic_search">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <!-- isLoggedIn === FALSE -->
+              <!-- <div
+                class="menu-right auth-wrapper d-none d-md-flex justify-content-end align-items-center"
+              >
+                <button class="auth login">Masuk</button>
+                <a href="#" class="auth register">Daftar</a>
+              </div> -->
+
+              <!-- isLoggedIn === TRUE -->
+              <div class="menu-right loggedIn">
+                <div class="item d-none d-lg-flex">
+                  <div class="_ic_box">
+                    <div class="count-item">88</div>
+                    <i class="bi bi-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="_ic_box">
+                    <div class="count-item">90</div>
+                    <i class="bi bi-cart-fill"></i>
+                  </div>
+                </div>
+                <div class="d-none d-lg-flex item">
+                  <a href="#" class="profile">
+                    <img src="/assets/img/default_user.png" alt="" />
+                    <span>Jhon Paul Ivan</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
-
     <main class="main-content">
-        <section class="hero">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="hero__left col-lg-8">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="/assets/img/banner-1.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/assets/img/banner-2.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/assets/img/banner-3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="hero__right">
-                            <div class="banner_right">
-                                <img src="/assets/img/banner-4.png" alt="">
-                            </div>
-                            <div class="banner_right">
-                                <img src="/assets/img/banner-2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+      <section class="hero">
+        <div class="container">
+          <div class="row g-2">
+            <div class="hero__left col-lg-8">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/assets/img/banner-1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/banner-2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/banner-3.png" alt="" />
+                  </div>
                 </div>
+                <div class="swiper-pagination slide-pagination"></div>
+              </div>
             </div>
-        </section>
-        <section class="category">
-            <div class="container">
-                <div class="top-category-box">
-                    <div class="swiper categorySlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/sepatu.png" alt="">
-                                    <span>Sepatu Pria</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/elektronik.png" alt="">
-                                    <span>Elektronik</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/hobby.png" alt="">
-                                    <span>Hobby & Koleksi</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/muslim.png" alt="">
-                                    <span>Pakaian Muslim</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/smartphone.png" alt="">
-                                    <span>Smartphone</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/sepatu.png" alt="">
-                                    <span>Sepatu Pria</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/elektronik.png" alt="">
-                                    <span>Elektronik</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/hobby.png" alt="">
-                                    <span>Hobby & Koleksi</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/muslim.png" alt="">
-                                    <span>Pakaian Muslim</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/smartphone.png" alt="">
-                                    <span>Smartphone</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/sepatu.png" alt="">
-                                    <span>Sepatu Pria</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/elektronik.png" alt="">
-                                    <span>Elektronik</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/hobby.png" alt="">
-                                    <span>Hobby & Koleksi</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/muslim.png" alt="">
-                                    <span>Pakaian Muslim</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/smartphone.png" alt="">
-                                    <span>Smartphone</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/sepatu.png" alt="">
-                                    <span>Sepatu Pria</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/elektronik.png" alt="">
-                                    <span>Elektronik</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/hobby.png" alt="">
-                                    <span>Hobby & Koleksi</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/muslim.png" alt="">
-                                    <span>Pakaian Muslim</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-item">
-                                    <img src="/assets/img/category/smartphone.png" alt="">
-                                    <span>Smartphone</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="hero__right">
+                <div class="banner_right">
+                  <img src="/assets/img/banner-4.png" alt="" />
                 </div>
+                <div class="banner_right">
+                  <img src="/assets/img/banner-2.png" alt="" />
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="live">
-            <div class="container">
-                <div class="header-box mt-3 mt-md-5">
-                    <div class="divider"></div>
-                    <div class="title">
-                        <i class="bi bi-play-circle-fill"></i>
-                        <span>Live Streaming</span>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <div class="top-category-box">
+            <div class="swiper categorySlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/sepatu.png" alt="" />
+                    <span>Sepatu Pria</span>
+                  </div>
                 </div>
-                <div class="live-box">
-                    <div class="live-wrapper">
-                        <div class="swiper liveSlider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/1.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/2.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/3.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/2.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/3.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/1.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/2.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/3.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/2.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ab_card_t">
-                                        <div class="count-show">
-                                            <i class="bi bi-eye"></i>
-                                            <span>199</span>
-                                        </div>
-                                        <div class="thumbs">
-                                            <img src="/assets/img/live-thumbs/3.png" alt="">
-                                            <div class="desc">
-                                                <div class="live-icon">
-                                                    <i class="bi bi-camera-reels-fill"></i>
-                                                </div>
-                                                <span class="title mt-3">Lorem ipsum dolor sit.</span>
-                                                <div class="seller_name">
-                                                    <i class="bi bi-shop me-2"></i>
-                                                    <b>Liana Fashion Official</b>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/elektronik.png" alt="" />
+                    <span>Elektronik</span>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/hobby.png" alt="" />
+                    <span>Hobby & Koleksi</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/muslim.png" alt="" />
+                    <span>Pakaian Muslim</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/smartphone.png" alt="" />
+                    <span>Smartphone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/sepatu.png" alt="" />
+                    <span>Sepatu Pria</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/elektronik.png" alt="" />
+                    <span>Elektronik</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/hobby.png" alt="" />
+                    <span>Hobby & Koleksi</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/muslim.png" alt="" />
+                    <span>Pakaian Muslim</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/smartphone.png" alt="" />
+                    <span>Smartphone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/sepatu.png" alt="" />
+                    <span>Sepatu Pria</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/elektronik.png" alt="" />
+                    <span>Elektronik</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/hobby.png" alt="" />
+                    <span>Hobby & Koleksi</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/muslim.png" alt="" />
+                    <span>Pakaian Muslim</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/smartphone.png" alt="" />
+                    <span>Smartphone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/sepatu.png" alt="" />
+                    <span>Sepatu Pria</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/elektronik.png" alt="" />
+                    <span>Elektronik</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/hobby.png" alt="" />
+                    <span>Hobby & Koleksi</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/muslim.png" alt="" />
+                    <span>Pakaian Muslim</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category-item">
+                    <img src="/assets/img/category/smartphone.png" alt="" />
+                    <span>Smartphone</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="banner-section py-2 py-md-5 mt-5">
-            <div class="container">
-                <a href="#" class="link-banner">
-                    <img src="/assets/img/dummy-banner.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="live d-none d-lg-block">
+        <div class="container">
+          <div class="header-box mt-3 mt-md-5">
+            <div class="divider"></div>
+            <div class="title">
+              <i class="bi bi-play-circle-fill"></i>
+              <span>Live Streaming</span>
+            </div>
+          </div>
+          <div class="live-box">
+            <div class="live-wrapper">
+              <div class="swiper liveSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/1.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/2.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/3.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/2.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/3.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/1.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/2.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/3.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/2.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ab_card_t">
+                      <div class="count-show">
+                        <i class="bi bi-eye"></i>
+                        <span>199</span>
+                      </div>
+                      <div class="thumbs">
+                        <img src="/assets/img/live-thumbs/3.png" alt="" />
+                        <div class="desc">
+                          <div class="live-icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                          </div>
+                          <span class="title mt-3">Lorem ipsum dolor sit.</span>
+                          <div class="seller_name">
+                            <i class="bi bi-shop me-2"></i>
+                            <b>Liana Fashion Official</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="best-seller">
+        <div class="container">
+          <div class="header-box mt-3 mt-md-5">
+            <div class="title">
+              <span>TERLARIS</span>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="swiper cardProductSlide py-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="card-product">
+                  <div class="top">
+                    <div class="isPromo">20%</div>
+                    <img src="/assets/img/products/1.png" alt="" />
+                  </div>
+                  <div class="body">
+                    <div class="product-name">
+                      <span
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore, et!</span
+                      >
+                    </div>
+                    <div class="prices">
+                      <span class="basic isPromo">Rp 100.000</span>
+                      <span class="promo">Rp 10.000</span>
+                    </div>
+                    <div class="infos">
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="count-sold">
+                        <span class="count">100 Terjual</span>
+                      </div>
+                    </div>
+                  </div>
                 </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="card-product">
+                  <div class="top">
+                    <div class="isPromo">20%</div>
+                    <img src="/assets/img/products/2.png" alt="" />
+                  </div>
+                  <div class="body">
+                    <div class="product-name">
+                      <span
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore, et!</span
+                      >
+                    </div>
+                    <div class="prices">
+                      <span class="basic isPromo">Rp 100.000</span>
+                      <span class="promo">Rp 10.000</span>
+                    </div>
+                    <div class="infos">
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="count-sold">
+                        <span class="count">100 Terjual</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="card-product">
+                  <div class="top">
+                    <div class="isPromo">20%</div>
+                    <img src="/assets/img/products/3.png" alt="" />
+                  </div>
+                  <div class="body">
+                    <div class="product-name">
+                      <span
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore, et!</span
+                      >
+                    </div>
+                    <div class="prices">
+                      <span class="basic isPromo">Rp 100.000</span>
+                      <span class="promo">Rp 10.000</span>
+                    </div>
+                    <div class="infos">
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="count-sold">
+                        <span class="count">100 Terjual</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="card-product">
+                  <div class="top">
+                    <div class="isPromo">20%</div>
+                    <img src="/assets/img/products/4.png" alt="" />
+                  </div>
+                  <div class="body">
+                    <div class="product-name">
+                      <span
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore, et!</span
+                      >
+                    </div>
+                    <div class="prices">
+                      <span class="basic isPromo">Rp 100.000</span>
+                      <span class="promo">Rp 10.000</span>
+                    </div>
+                    <div class="infos">
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="count-sold">
+                        <span class="count">100 Terjual</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="card-product">
+                  <div class="top">
+                    <div class="isPromo">20%</div>
+                    <img src="/assets/img/products/5.png" alt="" />
+                  </div>
+                  <div class="body">
+                    <div class="product-name">
+                      <span
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Tempore, et!</span
+                      >
+                    </div>
+                    <div class="prices">
+                      <span class="basic isPromo">Rp 100.000</span>
+                      <span class="promo">Rp 10.000</span>
+                    </div>
+                    <div class="infos">
+                      <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="count-sold">
+                        <span class="count">100 Terjual</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
-        <section class="product my-2 my-md-5">
-            <div class="container">
-                <div class="header-box-2 my-3 mt-my-5">
-                    <span class="title">PRODUK REKOMENDASI</span>
-                    <div class="divider"></div>
+            <div class="swiper-button-next slide-navigation"></div>
+            <div class="swiper-button-prev slide-navigation"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-section py-2 py-md-3 mt-5">
+        <div class="container">
+          <a href="#" class="link-banner">
+            <img src="/assets/img/dummy-banner.png" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="product my-2 my-md-5">
+        <div class="container">
+          <div class="header-box-2 my-3 mt-my-5">
+            <span class="title">PRODUK KAMI</span>
+            <div class="divider"></div>
+          </div>
+          <div class="row g-2 g-md-3">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/1.png" alt="" />
                 </div>
-                <div class="row g-2 g-md-3">
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/1.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/2.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/4.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/3.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/1.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/2.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/4.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/3.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/1.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/2.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/4.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/3.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/1.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/2.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/4.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <div class="isPromo">20%</div>
-                                <img src="/assets/img/products/3.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="promo">Rp 80.000</span>
-                                    <span class="basic isPromo">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product">
-                            <div class="top">
-                                <!-- <div class="isPromo">20%</div> -->
-                                <img src="/assets/img/products/5.png" alt="">
-                            </div>
-                            <div class="body">
-                                <div class="product-name">
-                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempore, et!</span>
-                                </div>
-                                <div class="prices">
-                                    <span class="basic">Rp 100.000</span>
-                                </div>
-                                <div class="infos">
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                    <div class="count-sold">
-                                        <span class="count">100 Terjual</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="#" class="card-product-more">
-                            <img src="/assets/img/logo-img.png" alt="">
-                            <div class="layer">
-                                <div class="_ic_more">
-                                    <i class="bi bi-chevron-right"></i>
-                                </div>
-                                <span>Semua...</span>
-                            </div>
-                        </a>
-                    </div>
+                  </div>
                 </div>
-                <!-- <div class="load-more"><a href="#" class="btn-all-product">Semua Produk</a></div> -->
+              </a>
             </div>
-        </section>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/2.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/4.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/3.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/1.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/2.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/4.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/3.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/1.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/2.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/4.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/3.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/1.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/2.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/4.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <div class="isPromo">20%</div>
+                  <img src="/assets/img/products/3.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="promo">Rp 80.000</span>
+                    <span class="basic isPromo">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product">
+                <div class="top">
+                  <!-- <div class="isPromo">20%</div> -->
+                  <img src="/assets/img/products/5.png" alt="" />
+                </div>
+                <div class="body">
+                  <div class="product-name">
+                    <span
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, et!</span
+                    >
+                  </div>
+                  <div class="prices">
+                    <span class="basic">Rp 100.000</span>
+                  </div>
+                  <div class="infos">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="count-sold">
+                      <span class="count">100 Terjual</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <a href="#" class="card-product-more">
+                <img src="/assets/img/logo-img.png" alt="" />
+                <div class="layer">
+                  <div class="_ic_more">
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                  <span>Semua...</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="load-more"><a href="#" class="btn-all-product">Semua Produk</a></div> -->
+        </div>
+      </section>
     </main>
     <section class="mobile-menus d-flex d-lg-none">
-        <div class="menu-wrapper">
-            <a href="#" class="item active">
-                <div class="icon"><i class="bi bi-house-fill"></i></div>
-                <span>Home</span>
-            </a>
-            <a href="#" class="item">
-                <div class="icon"><i class="bi bi-ui-checks-grid"></i></div>
-                <span>Produk</span>
-            </a>
-            <a href="#" class="item">
-                <div class="icon"><i class="bi bi-heart-fill"></i></div>
-                <span>Favorit</span>
-            </a>
-            <a href="#" class="item">
-                <div class="icon"><i class="bi bi-person-circle"></i></div>
-                <span>Profile</span>
-            </a>
-        </div>
+      <div class="menu-wrapper">
+        <a href="#" class="item active">
+          <div class="icon"><i class="bi bi-house-fill"></i></div>
+          <span>Home</span>
+        </a>
+        <a href="#" class="item">
+          <div class="icon"><i class="bi bi-ui-checks-grid"></i></div>
+          <span>Produk</span>
+        </a>
+        <a href="#" class="item">
+          <div class="icon"><i class="bi bi-heart-fill"></i></div>
+          <span>Favorit</span>
+        </a>
+        <a href="#" class="item">
+          <div class="icon"><i class="bi bi-person-circle"></i></div>
+          <span>Profile</span>
+        </a>
+      </div>
     </section>
     <footer class="d-none d-lg-block">
-        <div class="container">
-            <div class="main-footer">
-                <div class="row g-0">
-                    <div class="col-3">
-                        <div class="footer-item">
-                            <p class="title">Hubungi Kami</p>
-                            <div class="contacts">
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-telephone"></i>
-                                    </div>
-                                    <span>089612341234</span>
-                                </div>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </div>
-                                    <span>089612341234</span>
-                                </div>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-telegram"></i>
-                                    </div>
-                                    <span>089612341234</span>
-                                </div>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-envelope"></i>
-                                    </div>
-                                    <span>cs@abbabill.com</span>
-                                </div>
-                            </div>
-                        </div>
+      <div class="container">
+        <div class="main-footer">
+          <div class="row g-0">
+            <div class="col-3">
+              <div class="footer-item">
+                <p class="title">Hubungi Kami</p>
+                <div class="contacts">
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-telephone"></i>
                     </div>
-                    <div class="col-3">
-                        <div class="footer-item">
-                            <p class="title">Ikuti Kami</p>
-                            <div class="social">
-                                <a href="#" class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-facebook"></i>
-                                    </div>
-                                    <span>Facebook</span>
-                                </a>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-instagram"></i>
-                                    </div>
-                                    <span>Instagram</span>
-                                </div>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-twitter"></i>
-                                    </div>
-                                    <span>Twitter</span>
-                                </div>
-                                <div class="item">
-                                    <div class="ic">
-                                        <i class="bi bi-linkedin"></i>
-                                    </div>
-                                    <span>LinkedIn</span>
-                                </div>
-                            </div>
-                        </div>
+                    <span>089612341234</span>
+                  </div>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-whatsapp"></i>
                     </div>
-                    <div class="col-3">
-                        <div class="footer-item">
-                            <p class="title">Abbabill</p>
-                            <div class="contacts">
-                                <a href="#" class="item">
-                                    <span>Tentang</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <span>Karir</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <span>Blog</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <span>Syarat dan ketentuan</span>
-                                </a>
-                            </div>
-                        </div>
+                    <span>089612341234</span>
+                  </div>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-telegram"></i>
                     </div>
-                    <div class="col-3">
-                        <div class="footer-item">
-                            <p class="title">Download Aplikasi</p>
-                            <div class="app-box">
-                                <a href="" class="link-app">
-                                    <i class="bi bi-google-play me-2"></i>
-                                    <span>Play Store</span>
-                                </a>
-                                <a href="" class="link-app">
-                                    <i class="bi bi-apple me-2"></i>
-                                    <span>App Store</span>
-                                </a>
-                            </div>
-                            <div class="official-address py-3">
-                                <span class="d-block"><b>Office</b></span>
-                                <small>Jln. Melati No. 100 Blok 10A</small>
-                                <p>DKI Jakarta</p>
-                            </div>
-                        </div>
+                    <span>089612341234</span>
+                  </div>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-envelope"></i>
                     </div>
+                    <span>cs@abbabill.com</span>
+                  </div>
                 </div>
-
+              </div>
             </div>
+            <div class="col-3">
+              <div class="footer-item">
+                <p class="title">Ikuti Kami</p>
+                <div class="social">
+                  <a href="#" class="item">
+                    <div class="ic">
+                      <i class="bi bi-facebook"></i>
+                    </div>
+                    <span>Facebook</span>
+                  </a>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                  </div>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                  </div>
+                  <div class="item">
+                    <div class="ic">
+                      <i class="bi bi-linkedin"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-item">
+                <p class="title">Abbabill</p>
+                <div class="contacts">
+                  <a href="#" class="item">
+                    <span>Tentang</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span>Karir</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span>Blog</span>
+                  </a>
+                  <a href="#" class="item">
+                    <span>Syarat dan ketentuan</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-item">
+                <p class="title">Download Aplikasi</p>
+                <div class="app-box">
+                  <a href="" class="link-app">
+                    <i class="bi bi-google-play me-2"></i>
+                    <span>Play Store</span>
+                  </a>
+                  <a href="" class="link-app">
+                    <i class="bi bi-apple me-2"></i>
+                    <span>App Store</span>
+                  </a>
+                </div>
+                <div class="official-address py-3">
+                  <span class="d-block"><b>Office</b></span>
+                  <small>Jln. Melati No. 100 Blok 10A</small>
+                  <p>DKI Jakarta</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="copyright">
-            Copyright © 2021 Abbabill. All Rights Reserved
-        </div>
+      </div>
+      <div class="copyright">
+        Copyright © 2021 Abbabill. All Rights Reserved
+      </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/assets/js/ab_script.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 1000
-        });
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
     <script>
-        var swiper = new Swiper(".categorySlider", {
+      var swiper = new Swiper(".categorySlider", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        breakpoints: {
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 6,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 7,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 10,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".liveSlider", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        autoplay: {
+          delay: -1,
+          disableOnInteraction: false,
+        },
+        grabCursor: true,
+        loop: true,
+        speed: 6000,
+
+        breakpoints: {
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1200: {
             slidesPerView: 5,
             spaceBetween: 10,
-            breakpoints: {
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 6,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 7,
-                    spaceBetween: 10,
-                },
-                1200: {
-                    slidesPerView: 10,
-                    spaceBetween: 10,
-                },
-            },
-        });
+          },
+        },
+      });
     </script>
     <script>
-        var swiper = new Swiper(".liveSlider", {
-            slidesPerView: 2,
+      var swiper = new Swiper(".cardProductSlide", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        hashNavigation: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        grabCursor: true,
+        loop: true,
+        speed: 500,
+
+        breakpoints: {
+          992: {
+            slidesPerView: 4,
             spaceBetween: 10,
-            autoplay: {
-                delay: -1,
-                disableOnInteraction: false,
-            },
-            grabCursor: true,
-            loop: true,
-            speed: 6000,
-
-            breakpoints: {
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 10,
-                },
-                1200: {
-                    slidesPerView: 5,
-                    spaceBetween: 10,
-                },
-            },
-        });
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+        },
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

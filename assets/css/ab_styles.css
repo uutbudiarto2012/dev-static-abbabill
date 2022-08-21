@@ -628,6 +628,55 @@ footer .footer-item .app-box .link-app {
   font-size: 11px;
 }
 
+.swiper .slide-navigation {
+  background-color: #f7bb7a;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.swiper .slide-navigation::after {
+  font-size: 16px;
+  color: #FFF;
+}
+.swiper .slide-pagination.slide-pagination {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+.swiper .slide-pagination.slide-pagination .swiper-pagination-bullet {
+  transition: all ease-in-out 0.5s;
+  background-color: #000;
+}
+.swiper .slide-pagination.slide-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #f79c3a;
+  display: inline-block;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.auth-wrapper .auth {
+  height: 38px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.auth-wrapper .auth.login {
+  background-color: #f79c3a;
+  font-weight: 500;
+  color: #FFF;
+  border: 1px solid #f79c3a;
+}
+.auth-wrapper .auth.register {
+  color: #f79c3a;
+  font-weight: 500;
+  background-color: #FFF;
+  border: 1px solid #f79c3a;
+}
+
 @media (min-width: 768px) {
   .ab_main_nav {
     position: -webkit-sticky;
