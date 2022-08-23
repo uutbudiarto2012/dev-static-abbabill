@@ -259,6 +259,45 @@ a:hover {
   padding-bottom: 5px;
 }
 
+.message-live {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(6, 2, 23);
+}
+.message-live .link-home {
+  color: #fff;
+  font-size: 22px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+.message-live .message {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.message-live p {
+  color: #fff;
+}
+.message-live .download-app {
+  display: flex;
+}
+.message-live .download-app .link-app {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 32px;
+  margin: 0 10px;
+}
+
 .live-wrapper-show {
   height: 100vh;
   overflow: hidden;
@@ -297,13 +336,13 @@ a:hover {
   border-radius: 50%;
 }
 .live-box-show .live-chat {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   z-index: 11;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
-  width: 25vw;
-  height: 90vh;
+  width: 100vw;
+  height: 50vh;
   border-radius: 8px;
   overflow: auto;
   display: flex;
@@ -376,9 +415,9 @@ a:hover {
   background-color: rgba(0, 0, 0, 0);
   position: fixed;
   z-index: 11;
-  top: 80px;
-  left: 10px;
-  width: 23vw;
+  top: 60px;
+  left: 5px;
+  width: 100vw;
   height: 35vh;
   border-radius: 8px;
   padding: 10px;
@@ -400,8 +439,8 @@ a:hover {
   overflow: hidden;
 }
 .live-box-show .selected-product .product-box .item-product .prd .img-wrapper {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   overflow: hidden;
   background-color: #fff;
   border: 1px solid #fff;
@@ -419,7 +458,7 @@ a:hover {
   flex: 1;
 }
 .live-box-show .selected-product .product-box .item-product .prd .infos span {
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
 }
 .live-box-show .selected-product .product-box .actions {
@@ -453,6 +492,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: none;
+  z-index: 15;
+}
+.live-box-show .open-product-live.deIndex {
+  z-index: 1;
 }
 
 .productList {
@@ -1245,5 +1288,230 @@ footer .footer-item .app-box .link-app {
   }
   .ab_main_nav .ab_bottom_nav .right {
     width: 280px;
+  }
+  .live-wrapper-show {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .live-box-show {
+    background-color: #fff;
+  }
+  .live-box-show .video-player {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    outline: none;
+    border: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .live-box-show .icon-close {
+    position: fixed;
+    padding: 10px;
+    z-index: 10;
+    left: 10px;
+  }
+  .live-box-show .icon-close .link-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  .live-box-show .live-chat {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 11;
+    top: 10px;
+    right: 10px;
+    width: 25vw;
+    height: 90vh;
+    border-radius: 8px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .live-box-show .live-chat .header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .live-box-show .live-chat .body {
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+  }
+  .live-box-show .live-chat .body .chat-item {
+    display: flex;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+  .live-box-show .live-chat .body .chat-item .avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .live-box-show .live-chat .body .chat-item .avatar img {
+    width: 100%;
+    height: 100%;
+  }
+  .live-box-show .live-chat .body .chat-item .text {
+    flex: 1;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px 10px 10px 10px;
+  }
+  .live-box-show .live-chat .form-box {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    height: 60px;
+  }
+  .live-box-show .live-chat .form-box .form-chat-box {
+    display: flex;
+    padding: 10px;
+  }
+  .live-box-show .live-chat .form-box .form-chat-box .inputText {
+    flex: 1;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 0 10px;
+  }
+  .live-box-show .live-chat .form-box .form-chat-box .btn-send-chat {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-left: 6px;
+    border-radius: 8px;
+  }
+  .live-box-show .selected-product {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 11;
+    top: 80px;
+    left: 10px;
+    width: 23vw;
+    height: 35vh;
+    border-radius: 8px;
+    padding: 10px;
+    height: 70vh;
+  }
+  .live-box-show .selected-product .title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .live-box-show .selected-product .product-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .live-box-show .selected-product .product-box .item-product .prd {
+    display: flex;
+    overflow: hidden;
+  }
+  .live-box-show .selected-product .product-box .item-product .prd .img-wrapper {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .live-box-show .selected-product .product-box .item-product .prd .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .live-box-show .selected-product .product-box .item-product .prd .infos {
+    flex: 1;
+  }
+  .live-box-show .selected-product .product-box .item-product .prd .infos span {
+    font-size: 14px;
+    color: #fff;
+  }
+  .live-box-show .selected-product .product-box .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .live-box-show .selected-product .product-box .actions .price {
+    font-size: 18px;
+    font-weight: 700;
+    flex: 1;
+    color: #f28b1e;
+  }
+  .live-box-show .selected-product .product-box .actions .btn-in-review {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #f28b1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .live-box-show .open-product-live {
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .productList {
+    position: absolute;
+    top: 100vh;
+    background-color: #fff;
+    z-index: 12;
+    width: 100%;
+    height: 70vh;
+    overflow: auto;
+    transition: all ease-in-out 0.3s;
+  }
+  .productList.show {
+    top: 30vh;
+    padding-bottom: 100px;
+  }
+  .productList .open-product-live {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    z-index: 13;
+    background-color: #fff;
+    color: #000;
+    font-size: 22px;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
   }
 }/*# sourceMappingURL=ab_styles.css.map */
