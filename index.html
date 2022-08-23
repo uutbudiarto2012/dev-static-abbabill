@@ -143,7 +143,7 @@
         <div class="container">
           <div class="row g-2">
             <div class="hero__left col-lg-8">
-              <div class="swiper mySwiper">
+              <div class="swiper heroSlider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="/assets/img/banner-1.png" alt="" />
@@ -171,6 +171,7 @@
           </div>
         </div>
       </section>
+
       <section class="category">
         <div class="container">
           <div class="top-category-box">
@@ -301,6 +302,7 @@
           </div>
         </div>
       </section>
+
       <section class="live d-none d-lg-block">
         <div class="container">
           <div class="header-box mt-3 mt-md-5">
@@ -315,7 +317,7 @@
               <div class="swiper liveSlider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t d-block">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -333,10 +335,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -354,10 +356,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -375,10 +377,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -396,10 +398,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -417,10 +419,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -438,10 +440,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -459,10 +461,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -480,10 +482,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -501,10 +503,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="swiper-slide">
-                    <div class="ab_card_t">
+                    <a href="/live-streaming.html" class="ab_card_t">
                       <div class="count-show">
                         <i class="bi bi-eye"></i>
                         <span>199</span>
@@ -522,7 +524,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1274,6 +1276,7 @@
         </div>
       </section>
     </main>
+
     <section class="mobile-menus d-flex d-lg-none">
       <div class="menu-wrapper">
         <a href="#" class="item active">
@@ -1294,6 +1297,7 @@
         </a>
       </div>
     </section>
+
     <footer class="d-none d-lg-block">
       <div class="container">
         <div class="main-footer">
@@ -1423,104 +1427,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="/assets/js/ab_script.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        speed: 1000,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".categorySlider", {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        breakpoints: {
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          992: {
-            slidesPerView: 6,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 7,
-            spaceBetween: 10,
-          },
-          1200: {
-            slidesPerView: 10,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".liveSlider", {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        autoplay: {
-          delay: -1,
-          disableOnInteraction: false,
-        },
-        grabCursor: true,
-        loop: true,
-        speed: 6000,
-
-        breakpoints: {
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-          1200: {
-            slidesPerView: 5,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".cardProductSlide", {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        hashNavigation: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false,
-        },
-        grabCursor: true,
-        loop: true,
-        speed: 500,
-
-        breakpoints: {
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 10,
-          },
-          1200: {
-            slidesPerView: 6,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
+    <script src="/assets/js/ab_slider_script.js"></script>
   </body>
 </html>
