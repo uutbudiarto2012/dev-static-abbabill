@@ -1084,12 +1084,13 @@ footer .footer-item .app-box .link-app {
   min-height: 100vh;
 }
 .product-content .side-header {
-  padding: 20px;
+  padding: 20px 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .product-content .side-header i {
   font-size: 22px;
@@ -1098,6 +1099,17 @@ footer .footer-item .app-box .link-app {
 .product-content .side-header span {
   font-size: 18px;
   font-weight: 600;
+}
+.product-content .side-header .category-trigger .btn-menu-category {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.product-content .side-header .category-trigger .btn-menu-category i {
+  font-size: 26px;
 }
 .product-content .side-menu-products {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

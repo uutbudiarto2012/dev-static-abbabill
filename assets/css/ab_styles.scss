@@ -1246,12 +1246,13 @@ footer {
 .product-content {
   min-height: 100vh;
   .side-header {
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     i {
       font-size: 22px;
       margin-right: 10px;
@@ -1259,6 +1260,20 @@ footer {
     span {
       font-size: 18px;
       font-weight: 600;
+    }
+
+    .category-trigger {
+      .btn-menu-category {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        i {
+          font-size: 26px;
+        }
+      }
     }
   }
   .side-menu-products {
