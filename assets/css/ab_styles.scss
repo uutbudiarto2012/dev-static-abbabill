@@ -41,7 +41,7 @@ a {
   &.cart-dropdown {
     .dropdown-menu {
       padding: 10px;
-      width: 360px;
+      width: 300px;
       .cart-body {
         max-height: 400px;
         overflow: auto;
@@ -185,12 +185,12 @@ a {
     align-items: center;
 
     .left {
-      width: 50px;
+      width: 40px;
     }
 
     .center {
       flex: 1;
-      padding: 0 10px;
+      padding: 0 5px;
 
       .search-wrapper {
         width: 100%;
@@ -224,7 +224,7 @@ a {
     }
 
     .right {
-      width: 60px;
+      width: 40px;
 
       .menu-right {
         display: flex;
@@ -239,16 +239,16 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 20px;
+            margin-right: 0;
             font-size: 20px;
             color: #888;
 
             .count-item {
               position: absolute;
               top: -3px;
-              left: 19px;
-              height: 19px;
-              min-width: 19px;
+              left: 10px;
+              height: 13px;
+              min-width: 13px;
               border-radius: 50px;
               padding: 2px;
               background-color: red;
