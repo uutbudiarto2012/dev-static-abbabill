@@ -268,9 +268,9 @@
 
     <main class="main-content product-content">
       <section class="detail-product">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row g-2">
-            <div class="col-md-3 order-1">
+            <div class="col-md-4 order-1">
               <div class="media-wrapper">
                 <div class="swiper mainSwipper">
                   <div class="swiper-wrapper">
@@ -382,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 order-3 order-md-2">
+            <div class="col-md-5 order-3 order-md-2">
               <div class="detail-wrapper">
                 <div class="product-detail p-3">
                   <h1 class="product-name">
@@ -410,105 +410,39 @@
                     <span class="text">Terjual</span>
                   </div>
                 </div>
-                <div class="tab-wrapper">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="home-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#home"
-                        type="button"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                      >
-                        Deskripsi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="profile-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#profile"
-                        type="button"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                      >
-                        Spesifikasi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="contact-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#contact"
-                        type="button"
-                        role="tab"
-                        aria-controls="contact"
-                        aria-selected="false"
-                      >
-                        Ulasan
-                      </button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="home"
-                      role="tabpanel"
-                      aria-labelledby="home-tab"
-                    >
-                      <h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod consequuntur sunt deserunt esse atque dolorem, qui
-                        laboriosam laborum, ducimus magni animi distinctio
-                        quasi! Numquam sed at magnam. Inventore nobis
-                        perspiciatis reprehenderit pariatur atque, non
-                        obcaecati, praesentium illo, voluptas quae a
-                        voluptatibus error quidem enim tempora reiciendis
-                        delectus expedita tenetur eaque sit doloremque cum! Quis
-                        cumque inventore nemo maxime molestias vel voluptate
-                        asperiores magnam tempore dolorum delectus voluptates,
-                        recusandae sequi dolore praesentium culpa odio? Maxime
-                        voluptas asperiores aut placeat commodi, aliquam
-                        repellendus vel facilis culpa esse quod molestiae
-                        quaerat illo laboriosam! Inventore perferendis rem sed
-                        suscipit quo nisi dolores rerum, laudantium aperiam
-                        corrupti vitae aspernatur accusantium veniam et nobis,
-                        quam delectus? Officia sequi laudantium, corrupti
-                        voluptate repellendus commodi quos, pariatur provident
-                        quibusdam consectetur itaque neque sed sint illum
-                        tenetur earum quis nesciunt, ipsa laborum animi dicta
-                        adipisci ea. Tenetur eum quis, sequi tempore vitae iure
-                        suscipit neque velit, quas dolor in. Perferendis vel
-                        ullam veniam aliquam fugiat fugit, impedit optio autem
-                        asperiores illum qui ratione quo aspernatur harum
-                        doloribus consequuntur voluptates nisi tenetur atque
-                        doloremque commodi non repellendus provident nobis. Sunt
-                        nemo accusantium exercitationem quis provident nisi
-                        placeat fugiat, recusandae ratione et ex ipsa illum!
-                        Pariatur omnis voluptatum eaque iste sapiente.
-                      </h1>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="profile"
-                      role="tabpanel"
-                      aria-labelledby="profile-tab"
-                    >
-                      ...
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="contact"
-                      role="tabpanel"
-                      aria-labelledby="contact-tab"
-                    >
-                      ...
+                <div class="prices p-3">
+                  <span>Rp 10.000 - Rp 100.000</span>
+                </div>
+                <div class="action-boxes">
+                  <div class="header">Pilih Warna</div>
+                  <div class="colors">
+                    <button data-warna="1" class="item-color">Merah</button>
+                    <button data-warna="2" class="item-color">Kuning</button>
+                    <button data-warna="3" class="item-color">Hijau</button>
+                    <button data-warna="4" class="item-color">Biru</button>
+                    <button data-warna="5" class="item-color">
+                      Hijau Muda
+                    </button>
+                    <button data-warna="6" class="item-color">Biru Muda</button>
+                  </div>
+                  <div class="act-buy">
+                    <div class="row align-items-center">
+                      <div class="col-md-4">
+                        <div class="count-jumlah">
+                          <button class="de"><i class="bi bi-dash"></i></button>
+                          <input type="number" value="1" placeholder="jumlah" />
+                          <button class="de"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <div class="col-md-8 d-flex justify-content-end">
+                        <button class="btn-cart">
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </button>
+                        <button class="btn-buy">BElI SEKARANG</button>
+                        <button class="btn-like">
+                          <i class="bi bi-heart-fill"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -537,7 +471,211 @@
                     <span>Bayar secara online atau saat menerima barang.</span>
                   </div>
                 </div>
-                <div class="actions">BELI</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="tab-wrapper">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home"
+                      type="button"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                    >
+                      Deskripsi
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      Spesifikasi
+                    </button>
+                  </li>
+                  <li class="nav-item active" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                    >
+                      Ulasan
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <article class="p-3">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias officiis rerum quidem similique delectus
+                        architecto fuga magnam eligendi ipsam eum obcaecati ab,
+                        labore alias nulla, cum earum incidunt cumque unde
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <div class="p-3">
+                      <table class="table">
+                        <tr>
+                          <th>Nama</th>
+                          <th>Keterangan</th>
+                        </tr>
+                        <tr>
+                          <td>Warna</td>
+                          <td>Kuning,Biru,Hijau</td>
+                        </tr>
+                        <tr>
+                          <td>Brand</td>
+                          <td>Abbabill Fashion</td>
+                        </tr>
+                        <tr>
+                          <td>Berat</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>Lebar</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>Tinggi</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>Panjang</td>
+                          <td>100</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                  >
+                    <div class="p-3">
+                      <div class="ulasan-item">
+                        <div class="img-box">
+                          <img src="/assets/img/default_user.png" alt="" />
+                        </div>
+                        <div class="text-box">
+                          <span class="name">Dewi Enggraeni</span>
+                          <div class="count-rate me-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="message-box">
+                            <div class="message-media" id="rate-media"></div>
+                            <span class="message-text">
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit
+                              amet consectetur adipisicing elit. Molestias,
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ulasan-item">
+                        <div class="img-box">
+                          <img src="/assets/img/default_user.png" alt="" />
+                        </div>
+                        <div class="text-box">
+                          <span class="name">Dewi Enggraeni</span>
+                          <div class="count-rate me-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="message-box">
+                            <div class="message-media" id="rate-media"></div>
+                            <span class="message-text">
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit
+                              amet consectetur adipisicing elit. Molestias,
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ulasan-item">
+                        <div class="img-box">
+                          <img src="/assets/img/default_user.png" alt="" />
+                        </div>
+                        <div class="text-box">
+                          <span class="name">Dewi Enggraeni</span>
+                          <div class="count-rate me-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="message-box">
+                            <div class="message-media" id="rate-media"></div>
+                            <span class="message-text">
+                              Lorem ipsum dolor sit amet.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
