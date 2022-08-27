@@ -81,7 +81,7 @@
         <div class="container">
           <div class="menus">
             <div class="left">
-              <div class="logo">
+              <a href="index.html" class="logo">
                 <img
                   class="logo-full d-none d-md-block"
                   src="/assets/img/main_logo.png"
@@ -92,7 +92,7 @@
                   src="/assets/img/logo-img.png"
                   alt=""
                 />
-              </div>
+              </a>
             </div>
             <div class="center">
               <div class="search-wrapper">
@@ -270,7 +270,7 @@
       <section class="detail-product">
         <div class="container">
           <div class="row g-2">
-            <div class="col-md-4 order-1">
+            <div class="col-lg-4 order-1">
               <div class="media-wrapper">
                 <div class="swiper mainSwipper">
                   <div class="swiper-wrapper">
@@ -382,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 order-3 order-md-2">
+            <div class="col-lg-5 order-3 order-md-2">
               <div class="detail-wrapper">
                 <div class="product-detail p-3">
                   <h1 class="product-name">
@@ -425,16 +425,40 @@
                     </button>
                     <button data-warna="6" class="item-color">Biru Muda</button>
                   </div>
+                  <div class="stock-in-category p-3">
+                    <div class="countStock qty_product">
+                      <strong>STOK : </strong> 10
+                    </div>
+                    <input type="hidden" value="10" id="fix_qty" />
+                    <input type="hidden" value="10" id="fix_cart" />
+                    <div class="categoryName">
+                      <div class="categories">
+                        <strong> Kategori</strong>
+                        <a href="#"> Semua Produk </a>
+                      </div>
+                    </div>
+                  </div>
                   <div class="act-buy">
                     <div class="row align-items-center">
-                      <div class="col-md-4">
+                      <div class="col-md-4 mb-3 mb-lg-0">
                         <div class="count-jumlah">
-                          <button class="de"><i class="bi bi-dash"></i></button>
-                          <input type="number" value="1" placeholder="jumlah" />
-                          <button class="de"><i class="bi bi-plus"></i></button>
+                          <button onclick="countBuyHandler(-1)" class="de">
+                            <i class="bi bi-dash"></i>
+                          </button>
+                          <input
+                            class="input-count-buy"
+                            type="number"
+                            value="1"
+                            placeholder="jumlah"
+                          />
+                          <button onclick="countBuyHandler(1)" class="de">
+                            <i class="bi bi-plus"></i>
+                          </button>
                         </div>
                       </div>
-                      <div class="col-md-8 d-flex justify-content-end">
+                      <div
+                        class="col-md-8 mb-3 mb-lg-0 d-flex justify-content-center justify-content-md-end"
+                      >
                         <button class="btn-cart">
                           <i class="bi bi-cart-plus-fill"></i>
                         </button>
@@ -448,7 +472,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 order-2 order-md-3">
+            <div class="col-lg-3 order-2 order-md-3">
               <div class="right-detail">
                 <div class="box-info">
                   <div class="item-info">
@@ -831,7 +855,7 @@
     <script src="/assets/js/ab_slider_script.js"></script>
 
     <script>
-      var swiper = new Swiper(".thumbsSwipper", {
+      var swiperThumbs = new Swiper(".thumbsSwipper", {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
@@ -844,8 +868,33 @@
           prevEl: ".swiper-button-prev",
         },
         thumbs: {
-          swiper: swiper,
+          swiper: swiperThumbs,
         },
+      });
+    </script>
+
+    <script>
+      const inputCountBuy = document.querySelector(".input-count-buy");
+      const fixQTY = document.querySelector("#fix_qty");
+      const fixCART = document.querySelector("#fix_cart");
+      const countBuyHandler = (data) => {
+        const newData = parseInt(inputCountBuy.value) + data;
+        if (
+          newData > 0 &&
+          newData <= fixQTY.value &&
+          newData <= fixCART.value
+        ) {
+          inputCountBuy.value = newData;
+        }
+      };
+      inputCountBuy.addEventListener("input", function () {
+        let countValue = parseInt(this.value);
+        if (countValue > fixQTY.value || countValue > fixCART.value) {
+          this.value = fixQTY.value;
+        }
+        if (countValue < 1) {
+          this.value = 1;
+        }
       });
     </script>
   </body>
