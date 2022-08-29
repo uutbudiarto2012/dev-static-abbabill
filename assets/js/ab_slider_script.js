@@ -153,3 +153,33 @@ if(heroSliderRightBottom){
         // },
       });
 }
+
+// TOGGLE MENU PROFILE
+const btnToggleProfileMenu = document.querySelector(".btn-toggle-profile-menu")
+if(btnToggleProfileMenu){
+  const menuProfileBody = document.querySelector(".menu-body.menu-profile")
+  btnToggleProfileMenu.addEventListener("click",function(){
+    menuProfileBody.classList.toggle("show")
+  })
+}
+// TOGGLE MENU PROFILE
+
+// SELECT PROFILE IMAGE
+const inputImagePreview = document.querySelector(".inputImagePreview")
+const imagePreview = document.querySelector("#image-preview")
+if(inputImagePreview && imagePreview){
+  const errorFile = document.querySelector('.error-file')
+  inputImagePreview.addEventListener("input",function(event){
+    const fileType = event.target.files[0].type
+    if( fileType.toLowerCase() === "image/jpeg" || fileType.toLowerCase() === "image/jpg" || fileType.toLowerCase() === "image/png"){
+      const reader = new FileReader();
+      reader.onload = function(){
+        imagePreview.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+    errorFile.classList.add("d-none")
+    }else{
+      errorFile.classList.remove("d-none")
+    }
+  })
+}
