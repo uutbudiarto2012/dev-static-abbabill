@@ -10,6 +10,10 @@ a:hover {
   box-sizing: border-box;
 }
 
+body.hiddenFlow {
+  overflow: hidden;
+}
+
 /* Chrome, Safari, Edge, Opera */
 .input-count-buy::-webkit-outer-spin-button,
 .input-count-buy::-webkit-inner-spin-button {
@@ -1543,10 +1547,10 @@ footer .footer-item .app-box .link-app {
   background-color: #fff;
   transition: all ease-in-out 0.2s;
   margin-top: 15px;
-  z-index: 20;
 }
 .profile .sidemenu .menu-body.show {
   transform: translateX(0);
+  z-index: 99;
 }
 .profile .sidemenu .menu-body .menu-item {
   padding: 10px;
@@ -1587,7 +1591,6 @@ footer .footer-item .app-box .link-app {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  position: relative;
   cursor: pointer;
 }
 .profile .profile-info-wrapper .form-image:hover {

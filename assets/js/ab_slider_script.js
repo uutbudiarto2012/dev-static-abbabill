@@ -160,6 +160,7 @@ if(btnToggleProfileMenu){
   const menuProfileBody = document.querySelector(".menu-body.menu-profile")
   btnToggleProfileMenu.addEventListener("click",function(){
     menuProfileBody.classList.toggle("show")
+    document.querySelector('body').classList.toggle("hiddenFlow")
   })
 }
 // TOGGLE MENU PROFILE

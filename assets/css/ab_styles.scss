@@ -11,6 +11,10 @@ a {
   box-sizing: border-box;
 }
 
+body.hiddenFlow {
+  overflow: hidden;
+}
+
 // UTILS
 
 /* Chrome, Safari, Edge, Opera */
@@ -1754,9 +1758,9 @@ footer {
       background-color: #fff;
       transition: all ease-in-out 0.2s;
       margin-top: 15px;
-      z-index: 20;
       &.show {
         transform: translateX(0);
+        z-index: 99;
       }
       .menu-item {
         padding: 10px;
@@ -1805,7 +1809,6 @@ footer {
       overflow: hidden;
       justify-content: center;
       align-items: center;
-      position: relative;
       cursor: pointer;
       &:hover {
         border: 1px dashed #f7bb7a;
