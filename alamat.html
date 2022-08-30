@@ -299,15 +299,15 @@
                     <i class="bi bi-person"></i>
                     <span>Informasi Akun</span>
                   </a>
-                  <a href="pesanan.html" class="menu-item active">
+                  <a href="pesanan.html" class="menu-item">
                     <i class="bi bi-archive"></i>
                     <span>Pesananku</span>
                   </a>
-                  <a href="#" class="menu-item">
+                  <a href="alamat.html" class="menu-item active">
                     <i class="bi bi-geo-alt"></i>
                     <span>Alamat</span>
                   </a>
-                  <a href="#" class="menu-item">
+                  <a href="favorite.html" class="menu-item">
                     <i class="bi bi-heart"></i>
                     <span>Favorit</span>
                   </a>
@@ -328,154 +328,195 @@
             </div>
             <div class="col-md-9">
               <div class="profile-info-wrapper">
-                <div class="col-12">
-                  <div class="sub-title mb-4">
-                    <span>Pesananku</span>
-                  </div>
+                <div class="sub-title mb-4">
+                  <span>Alamat</span>
                 </div>
-                <div class="order-wrapper">
-                  <div class="order-item mb-3 belum-bayar">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
+                <div class="address-wrapper">
+                  <div class="address-item utama">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Nama</span>
+                          <span class="spar">:</span>
+                          <span class="val">Joni</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Telepon</span>
+                          <span class="spar">:</span>
+                          <span class="val">085525648793</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Alamat</span>
+                          <span class="spar">:</span>
+                          <span class="val"
+                            >Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Qui, ipsum.</span
+                          >
+                        </div>
                       </div>
-                      <div class="status">
-                        <i class="bi bi-clock-history"></i>
-                        <span>belum bayar</span>
-                      </div>
-                    </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="order-item mb-3 sudah-bayar">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
-                      </div>
-                      <div class="status">
-                        <i class="bi bi-credit-card-2-front"></i>
-                        <span>sudah bayar</span>
-                      </div>
-                    </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="order-item mb-3 di-kirim">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
-                      </div>
-                      <div class="status">
-                        <i class="bi bi-truck"></i>
-                        <span>dikirim</span>
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Provinsi</span>
+                          <span class="spar">:</span>
+                          <span class="val">DKI Jakarta</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kota</span>
+                          <span class="spar">:</span>
+                          <span class="val">Jakarta Timur</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kec/Kab</span>
+                          <span class="spar">:</span>
+                          <span class="val">Lenteng Agung</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kelurahan</span>
+                          <span class="spar">:</span>
+                          <span class="val">Cari Wilayah</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kode Pos</span>
+                          <span class="spar">:</span>
+                          <span class="val">2202989</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
+                    <div class="footer">
+                      <!-- <button class="btn btn-address set-main">
+                        Jadikan Utama
+                      </button> -->
+                      <span class="label-main">Atlamat Utama</span>
+                      <button class="btn btn-address set-pin">
+                        <i class="bi bi-geo-alt"></i> Set Pin
+                      </button>
+                      <button class="btn btn-address btn-edit">
+                        <i class="bi bi-pencil"></i> Ubah
+                      </button>
                     </div>
                   </div>
-                  <div class="order-item mb-3 di-kemas">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
+                  <div class="address-item">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Nama</span>
+                          <span class="spar">:</span>
+                          <span class="val">Joni</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Telepon</span>
+                          <span class="spar">:</span>
+                          <span class="val">085525648793</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Alamat</span>
+                          <span class="spar">:</span>
+                          <span class="val"
+                            >Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Qui, ipsum.</span
+                          >
+                        </div>
                       </div>
-                      <div class="status">
-                        <i class="bi bi-box-seam"></i>
-                        <span>dikemas</span>
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Provinsi</span>
+                          <span class="spar">:</span>
+                          <span class="val">DKI Jakarta</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kota</span>
+                          <span class="spar">:</span>
+                          <span class="val">Jakarta Timur</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kec/Kab</span>
+                          <span class="spar">:</span>
+                          <span class="val">Lenteng Agung</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kelurahan</span>
+                          <span class="spar">:</span>
+                          <span class="val">Cari Wilayah</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kode Pos</span>
+                          <span class="spar">:</span>
+                          <span class="val">2202989</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
+                    <div class="footer">
+                      <button class="btn btn-address set-main">
+                        Jadikan Utama
+                      </button>
+                      <button class="btn btn-address set-pin">
+                        <i class="bi bi-geo-alt"></i> Set Pin
+                      </button>
+                      <button class="btn btn-address btn-edit">
+                        <i class="bi bi-pencil"></i> Ubah
+                      </button>
                     </div>
                   </div>
-                  <div class="order-item mb-3 pembayaran-gagal">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
+                  <div class="address-item">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Nama</span>
+                          <span class="spar">:</span>
+                          <span class="val">Joni</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Telepon</span>
+                          <span class="spar">:</span>
+                          <span class="val">085525648793</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Alamat</span>
+                          <span class="spar">:</span>
+                          <span class="val"
+                            >Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Qui, ipsum.</span
+                          >
+                        </div>
                       </div>
-                      <div class="status">
-                        <i class="bi bi-x-lg"></i>
-                        <span>pembayaran gagal</span>
+                      <div class="col-lg-6">
+                        <div class="text-wrapper">
+                          <span class="key">Provinsi</span>
+                          <span class="spar">:</span>
+                          <span class="val">DKI Jakarta</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kota</span>
+                          <span class="spar">:</span>
+                          <span class="val">Jakarta Timur</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kec/Kab</span>
+                          <span class="spar">:</span>
+                          <span class="val">Lenteng Agung</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kelurahan</span>
+                          <span class="spar">:</span>
+                          <span class="val">Cari Wilayah</span>
+                        </div>
+                        <div class="text-wrapper">
+                          <span class="key">Kode Pos</span>
+                          <span class="spar">:</span>
+                          <span class="val">2202989</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="order-item mb-3 selesai">
-                    <div class="top">
-                      <div class="invoice">
-                        <a href="#" class="link">ORD-20220829RcN-Gj1</a>
-                        <div class="date-time">12-12-2012 12:12:00</div>
-                      </div>
-                      <div class="status">
-                        <i class="bi bi-check2-all"></i>
-                        <span>selesai</span>
-                      </div>
-                    </div>
-                    <div class="bottom">
-                      <div class="price-info">
-                        <span class="text">Total Harga</span>
-                        <span class="price">Rp 38.000</span>
-                      </div>
-                      <div class="shipping">
-                        <a href="#" class="link-shipping">
-                          <i class="bi bi-info"></i>
-                          <span>Info Shipping</span>
-                        </a>
-                      </div>
+                    <div class="footer">
+                      <button class="btn btn-address set-main">
+                        Jadikan Utama
+                      </button>
+                      <button class="btn btn-address set-pin">
+                        <i class="bi bi-geo-alt"></i> Set Pin
+                      </button>
+                      <button class="btn btn-address btn-edit">
+                        <i class="bi bi-pencil"></i> Ubah
+                      </button>
                     </div>
                   </div>
                 </div>

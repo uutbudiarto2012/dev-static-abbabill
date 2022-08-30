@@ -295,7 +295,7 @@
             <div class="col-md-3">
               <div class="sidemenu">
                 <div class="menu-body menu-profile">
-                  <a href="profile.html" class="menu-item active">
+                  <a href="profile.html" class="menu-item">
                     <i class="bi bi-person"></i>
                     <span>Informasi Akun</span>
                   </a>
@@ -307,15 +307,15 @@
                     <i class="bi bi-geo-alt"></i>
                     <span>Alamat</span>
                   </a>
-                  <a href="favorite.html" class="menu-item">
+                  <a href="favorite.html" class="menu-item active">
                     <i class="bi bi-heart"></i>
                     <span>Favorit</span>
                   </a>
-                  <a href="pengaduan.html" class="menu-item">
+                  <a href="#" class="menu-item">
                     <i class="bi bi-headset"></i>
                     <span>Pengaduan</span>
                   </a>
-                  <a href="pengaturan.html" class="menu-item">
+                  <a href="#" class="menu-item">
                     <i class="bi bi-sliders"></i>
                     <span>Pengaturan</span>
                   </a>
@@ -329,137 +329,102 @@
             <div class="col-md-9">
               <div class="profile-info-wrapper">
                 <div class="col-12">
-                  <div class="sub-title">
-                    <span>Info Pengguna</span>
+                  <div class="sub-title mb-4">
+                    <span>Wishlist</span>
                   </div>
                 </div>
-                <form class="form">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <label for="image" class="form-image">
-                        <img
-                          id="image-preview"
-                          class="image-preview"
-                          src="/assets/img/default_user.png"
-                          alt=""
-                        />
-                      </label>
-                      <small
-                        class="text-danger text-center d-block mb-3 error-file d-none"
-                        >Silahkan upload file (jpg || png)</small
-                      >
-                      <input
-                        class="d-none inputImagePreview"
-                        type="file"
-                        id="image"
-                        name="image"
-                        accept="image/*"
-                      />
-                    </div>
-                    <div class="col-lg-4 mb-3">
-                      <div class="input-wrapper">
-                        <div class="ic">
-                          <i class="bi bi-person"></i>
+                <div class="row g-2">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card-product no-hover">
+                      <div class="top">
+                        <img src="/assets/img/products/3.png" alt="" />
+                      </div>
+                      <div class="body">
+                        <div class="product-name">
+                          <span
+                            >Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore, et!</span
+                          >
                         </div>
-                        <input
-                          type="text"
-                          class="input-field"
-                          placeholder="Nama Lengkap"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
-                      <div class="input-wrapper">
-                        <div class="ic">
-                          <i class="bi bi-people"></i>
+                        <div class="prices">
+                          <span class="basic">Rp 100.000</span>
                         </div>
-                        <select name="gender" id="gender" class="input-field">
-                          <option value="">jenis kelamin</option>
-                          <option value="1">MALE</option>
-                          <option value="2">FEMALE</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
-                      <div class="input-wrapper">
-                        <div class="ic">
-                          <i class="bi bi-telephone"></i>
+                        <div class="action-wrapper row g-2">
+                          <div class="col-9">
+                            <button class="btn-ab-buy">
+                              <i class="bi bi-cart"></i> Keranjang
+                            </button>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn-ab-del">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
                         </div>
-                        <input
-                          type="text"
-                          class="input-field"
-                          placeholder="Telepon"
-                        />
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="sub-title">
-                        <span>Alamat</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 mb-3">
-                      <div class="input-wrapper">
-                        <textarea
-                          type="text"
-                          class="input-field"
-                          placeholder="Alamat"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="input-wrapper">
-                        <select class="input-field">
-                          <option value="">provinsi</option>
-                          <option value="1">DKI Jakarta</option>
-                          <option value="2">DI Yogyakarta</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="input-wrapper">
-                        <select class="input-field">
-                          <option value="">kota/kab</option>
-                          <option value="1">Jakarta Barat</option>
-                          <option value="2">Sleman</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="input-wrapper">
-                        <select class="input-field">
-                          <option value="">kecamatan</option>
-                          <option value="1">Jakarta Barat</option>
-                          <option value="2">Sleman</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
-                      <div class="input-wrapper">
-                        <select class="input-field">
-                          <option value="">kelurahan</option>
-                          <option value="1">Jakarta Barat</option>
-                          <option value="2">Sleman</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 mb-3">
-                      <div class="input-wrapper">
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="input-field"
-                          placeholder="kode pos"
-                        />
-                      </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-lg-3 mb-3">
-                      <button class="btn-save">Simpan</button>
                     </div>
                   </div>
-                </form>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card-product no-hover">
+                      <div class="top">
+                        <img src="/assets/img/products/3.png" alt="" />
+                      </div>
+                      <div class="body">
+                        <div class="product-name">
+                          <span
+                            >Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore, et!</span
+                          >
+                        </div>
+                        <div class="prices">
+                          <span class="basic">Rp 100.000</span>
+                        </div>
+                        <div class="action-wrapper row g-2">
+                          <div class="col-9">
+                            <button class="btn-ab-buy">
+                              <i class="bi bi-cart"></i> Keranjang
+                            </button>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn-ab-del">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card-product no-hover">
+                      <div class="top">
+                        <img src="/assets/img/products/3.png" alt="" />
+                      </div>
+                      <div class="body">
+                        <div class="product-name">
+                          <span
+                            >Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempore, et!</span
+                          >
+                        </div>
+                        <div class="prices">
+                          <span class="basic">Rp 100.000</span>
+                        </div>
+                        <div class="action-wrapper row g-2">
+                          <div class="col-9">
+                            <button class="btn-ab-buy">
+                              <i class="bi bi-cart"></i> Keranjang
+                            </button>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn-ab-del">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -473,15 +438,15 @@
           <div class="icon"><i class="bi bi-house-fill"></i></div>
           <span>Home</span>
         </a>
-        <a href="product.html" class="item">
+        <a href="product.html" class="item active">
           <div class="icon"><i class="bi bi-ui-checks-grid"></i></div>
           <span>Produk</span>
         </a>
-        <a href="favorite.html" class="item">
+        <a href="#" class="item">
           <div class="icon"><i class="bi bi-heart-fill"></i></div>
           <span>Favorit</span>
         </a>
-        <a href="#" class="item active">
+        <a href="profile.html" class="item">
           <div class="icon"><i class="bi bi-person-circle"></i></div>
           <span>Profile</span>
         </a>
