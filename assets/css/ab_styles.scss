@@ -17,6 +17,20 @@ body.hiddenFlow {
 
 // UTILS
 
+.form-custom-input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 100%;
+  &:focus {
+    border: 1px solid #ddd;
+  }
+  &.error {
+    border: 1px solid #f00;
+  }
+}
+
 /* Chrome, Safari, Edge, Opera */
 .input-count-buy::-webkit-outer-spin-button,
 .input-count-buy::-webkit-inner-spin-button {
@@ -2107,6 +2121,107 @@ footer {
   }
 }
 // PROFILE PAGE
+
+.complain-wrapper {
+  margin-top: 40px;
+  .complain-item {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+    .left {
+      flex: 1;
+      padding-bottom: 15px;
+      .complain-text {
+        display: flex;
+        align-items: center;
+        .key {
+          width: 100px;
+        }
+        .eq {
+          width: 20px;
+        }
+        .val {
+          flex: 1;
+          font-weight: 500;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (min-width: 576px) {
+        justify-content: flex-end;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        .btn-action {
+          padding: 5px;
+          background-color: #f79c3a;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          margin-right: 10px;
+          width: 100px;
+        }
+      }
+      .status {
+        padding: 3px 10px;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 60px;
+        background-color: #0f8f06;
+        &.proses {
+          background-color: rgb(255, 196, 0);
+          color: #232323;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.setting-wrapper {
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 40px;
+    margin-bottom: 10px;
+    .ic {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .input-field {
+      background-color: transparent;
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+  }
+}
 
 @media (min-width: 576px) {
   .hero {

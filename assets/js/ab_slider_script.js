@@ -184,3 +184,15 @@ if(inputImagePreview && imagePreview){
     }
   })
 }
+
+const togglePassword = document.querySelectorAll('.toggle-password')
+togglePassword.forEach(item => {
+  const inputPass = item.previousElementSibling
+  item.addEventListener("click",function(){
+    if (inputPass.type === "password") {
+      inputPass.type = "text";
+    } else {
+      inputPass.type = "password";
+    }
+  })
+});
