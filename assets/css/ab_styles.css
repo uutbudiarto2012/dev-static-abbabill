@@ -70,6 +70,21 @@ body.hiddenFlow {
   background-color: rgb(182, 2, 2);
 }
 
+.btn-ab-secondary {
+  padding: 5px;
+  width: 100%;
+  background-color: rgb(173, 171, 171);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+.btn-ab-secondary:hover {
+  scale: 1.03;
+  background-color: rgb(135, 133, 133);
+}
+
 .dropdown.ab-ctm ul li a {
   font-size: 16px;
 }
@@ -999,7 +1014,7 @@ footer .footer-item .title {
 }
 footer .footer-item .contacts .item {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   align-items: center;
 }
 footer .footer-item .contacts .item .ic {
@@ -1015,7 +1030,7 @@ footer .footer-item .contacts .item .ic {
 }
 footer .footer-item .contacts .item span {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   color: #232323;
 }
 footer .footer-item .social .item {
@@ -1837,6 +1852,21 @@ footer .footer-item .app-box .link-app {
 }
 .profile .order-wrapper .order-item.selesai .bottom .shipping .link-shipping {
   display: none;
+}
+
+.map-wrapper-body {
+  overflow: hidden;
+  max-height: 60vh;
+  border-radius: 5px;
+}
+
+.map-add-address-wrapper {
+  overflow: hidden;
+  max-height: 50vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .complain-wrapper {

@@ -330,295 +330,146 @@
             </div>
             <div class="col-md-9">
               <div class="profile-info-wrapper">
-                <div class="row">
-                  <div class="col-md-3 py-2">
-                    <a href="form-tambah-alamat.html" class="btn-ab-buy p-2"
-                      >Tambah Alamat</a
-                    >
-                  </div>
-                </div>
                 <div class="sub-title mb-4">
-                  <span>Alamat</span>
+                  <span>Alamat Baru</span>
                 </div>
-                <div class="address-wrapper">
-                  <div class="address-item utama">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Nama</span>
-                          <span class="spar">:</span>
-                          <span class="val">Joni</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Telepon</span>
-                          <span class="spar">:</span>
-                          <span class="val">085525648793</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Alamat</span>
-                          <span class="spar">:</span>
-                          <span class="val"
-                            >Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Qui, ipsum.</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Provinsi</span>
-                          <span class="spar">:</span>
-                          <span class="val">DKI Jakarta</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kota</span>
-                          <span class="spar">:</span>
-                          <span class="val">Jakarta Timur</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kec/Kab</span>
-                          <span class="spar">:</span>
-                          <span class="val">Lenteng Agung</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kelurahan</span>
-                          <span class="spar">:</span>
-                          <span class="val">Cari Wilayah</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kode Pos</span>
-                          <span class="spar">:</span>
-                          <span class="val">2202989</span>
-                        </div>
+                <form class="form">
+                  <div class="row">
+                    <div class="col-lg-6 mb-3">
+                      <label for="" class="mb-2">Nama Penerima</label>
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          class="input-field"
+                          placeholder="nama penerima"
+                        />
                       </div>
                     </div>
-                    <div class="footer">
-                      <!-- <button class="btn btn-address set-main">
-                        Jadikan Utama
-                      </button> -->
-                      <span class="label-main">Alamat Utama</span>
-                      <button
-                        class="btn btn-address set-pin"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalPin"
+                    <div class="col-lg-6 mb-3">
+                      <label for="" class="mb-2">Nomor Telepon</label>
+                      <div class="input-wrapper">
+                        <input
+                          type="tel"
+                          class="input-field"
+                          placeholder="nomor penerima"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                      <label class="mb-2" for="address">Alamat</label>
+                      <div class="input-wrapper">
+                        <textarea
+                          type="text"
+                          id="address"
+                          class="input-field"
+                          placeholder="Alamat"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                      <div class="input-wrapper">
+                        <select class="input-field">
+                          <option value="">provinsi</option>
+                          <option value="1">DKI Jakarta</option>
+                          <option value="2">DI Yogyakarta</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                      <div class="input-wrapper">
+                        <select class="input-field">
+                          <option value="">kota/kab</option>
+                          <option value="1">Jakarta Barat</option>
+                          <option value="2">Sleman</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                      <div class="input-wrapper">
+                        <select class="input-field">
+                          <option value="">kecamatan</option>
+                          <option value="1">Jakarta Barat</option>
+                          <option value="2">Sleman</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                      <div class="input-wrapper">
+                        <select class="input-field">
+                          <option value="">kelurahan</option>
+                          <option value="1">Jakarta Barat</option>
+                          <option value="2">Sleman</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 mb-3">
+                      <div class="input-wrapper">
+                        <input
+                          type="number"
+                          name=""
+                          id=""
+                          class="input-field"
+                          placeholder="kode pos"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <span
+                        >Atur Pin Point
+                        <b class="text-danger">WAJIB DIISI</b></span
                       >
-                        <i class="bi bi-geo-alt"></i> Set Pin
-                      </button>
-                      <button class="btn btn-address btn-edit">
-                        <i class="bi bi-pencil"></i> Ubah
-                      </button>
+                      <div id="map" class="map-add-address-wrapper">
+                        <!-- MAP DISPLAY HERE BRO ID BOLEH BEBAS D GANTI SESUAI DOM-->
+
+                        <!-- INI SAMPLE SAYA DOANG NANTI HAPUS AJA -->
+                        <div class="mapouter">
+                          <div class="gmap_canvas">
+                            <iframe
+                              width="1080"
+                              height="1080"
+                              id="gmap_canvas"
+                              src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                              frameborder="0"
+                              scrolling="no"
+                              marginheight="0"
+                              marginwidth="0"
+                            ></iframe
+                            ><a href="https://123movies-to.org"></a
+                            ><br /><style>
+                              .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 1080px;
+                                width: 1080px;
+                              }</style
+                            ><a href="https://www.embedgooglemap.net"
+                              >embedgooglemap.net</a
+                            ><style>
+                              .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 1080px;
+                                width: 1080px;
+                              }
+                            </style>
+                          </div>
+                        </div>
+                        <!-- INI SAMPLE SAYA DOANG NANTI HAPUS AJA -->
+                      </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-lg-3 my-3">
+                      <button class="btn-save">Simpan</button>
                     </div>
                   </div>
-                  <div class="address-item">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Nama</span>
-                          <span class="spar">:</span>
-                          <span class="val">Joni</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Telepon</span>
-                          <span class="spar">:</span>
-                          <span class="val">085525648793</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Alamat</span>
-                          <span class="spar">:</span>
-                          <span class="val"
-                            >Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Qui, ipsum.</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Provinsi</span>
-                          <span class="spar">:</span>
-                          <span class="val">DKI Jakarta</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kota</span>
-                          <span class="spar">:</span>
-                          <span class="val">Jakarta Timur</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kec/Kab</span>
-                          <span class="spar">:</span>
-                          <span class="val">Lenteng Agung</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kelurahan</span>
-                          <span class="spar">:</span>
-                          <span class="val">Cari Wilayah</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kode Pos</span>
-                          <span class="spar">:</span>
-                          <span class="val">2202989</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="footer">
-                      <button class="btn btn-address set-main">
-                        Jadikan Utama
-                      </button>
-                      <button class="btn btn-address set-pin">
-                        <i class="bi bi-geo-alt"></i> Set Pin
-                      </button>
-                      <button class="btn btn-address btn-edit">
-                        <i class="bi bi-pencil"></i> Ubah
-                      </button>
-                    </div>
-                  </div>
-                  <div class="address-item">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Nama</span>
-                          <span class="spar">:</span>
-                          <span class="val">Joni</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Telepon</span>
-                          <span class="spar">:</span>
-                          <span class="val">085525648793</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Alamat</span>
-                          <span class="spar">:</span>
-                          <span class="val"
-                            >Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Qui, ipsum.</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="text-wrapper">
-                          <span class="key">Provinsi</span>
-                          <span class="spar">:</span>
-                          <span class="val">DKI Jakarta</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kota</span>
-                          <span class="spar">:</span>
-                          <span class="val">Jakarta Timur</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kec/Kab</span>
-                          <span class="spar">:</span>
-                          <span class="val">Lenteng Agung</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kelurahan</span>
-                          <span class="spar">:</span>
-                          <span class="val">Cari Wilayah</span>
-                        </div>
-                        <div class="text-wrapper">
-                          <span class="key">Kode Pos</span>
-                          <span class="spar">:</span>
-                          <span class="val">2202989</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="footer">
-                      <button class="btn btn-address set-main">
-                        Jadikan Utama
-                      </button>
-                      <button class="btn btn-address set-pin">
-                        <i class="bi bi-geo-alt"></i> Set Pin
-                      </button>
-                      <button class="btn btn-address btn-edit">
-                        <i class="bi bi-pencil"></i> Ubah
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- MODAL PIN -->
-    <div
-      class="modal fade"
-      id="modalPin"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Atur Pin Point</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <input type="text" name="id" id="id" class="d-none" />
-              <input type="hidden" name="lat" id="location_latitude" />
-              <input type="hidden" name="long" id="location_longitude" />
-              <input type="hidden" name="latdefault" id="latdefault" />
-              <input type="hidden" name="longdefault" id="longdefault" />
-              <div id="map" class="map-wrapper-body">
-                <!-- MAP DISPLAY HERE BRO ID BOLEH BEBAS D GANTI SESUAI DOM-->
-
-                <!-- INI SAMPLE SAYA DOANG NANTI HAPUS AJA -->
-                <div class="mapouter">
-                  <div class="gmap_canvas">
-                    <iframe
-                      width="825"
-                      height="788"
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                      frameborder="0"
-                      scrolling="no"
-                      marginheight="0"
-                      marginwidth="0"
-                    ></iframe
-                    ><a href="https://123movies-to.org"></a><br /><style>
-                      .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 788px;
-                        width: 825px;
-                      }</style
-                    ><a href="https://www.embedgooglemap.net"
-                      >embedgooglemap.net</a
-                    ><style>
-                      .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 788px;
-                        width: 825px;
-                      }
-                    </style>
-                  </div>
-                </div>
-                <!-- INI SAMPLE SAYA DOANG NANTI HAPUS AJA -->
-              </div>
-              <div class="row justify-content-end pt-3">
-                <div class="col-6 col-lg-3">
-                  <button type="submit" class="btn-ab-buy py-2">Simpan</button>
-                </div>
-                <div class="col-6 col-lg-3">
-                  <button type="submit" class="btn-ab-secondary py-2">
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MODAL PIN -->
 
     <section class="mobile-menus d-flex d-lg-none">
       <div class="menu-wrapper">

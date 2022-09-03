@@ -71,6 +71,20 @@ body.hiddenFlow {
     background-color: rgb(182, 2, 2);
   }
 }
+.btn-ab-secondary {
+  padding: 5px;
+  width: 100%;
+  background-color: rgb(173, 171, 171);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    scale: 1.03;
+    background-color: rgb(135, 133, 133);
+  }
+}
 
 .dropdown {
   &.ab-ctm {
@@ -1132,7 +1146,7 @@ footer {
     .contacts {
       .item {
         display: flex;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         align-items: center;
 
         .ic {
@@ -1149,7 +1163,7 @@ footer {
 
         span {
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 400;
           color: #232323;
         }
       }
@@ -2119,6 +2133,20 @@ footer {
       }
     }
   }
+}
+
+.map-wrapper-body {
+  overflow: hidden;
+  max-height: 60vh;
+  border-radius: 5px;
+}
+.map-add-address-wrapper {
+  overflow: hidden;
+  max-height: 50vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 // PROFILE PAGE
 

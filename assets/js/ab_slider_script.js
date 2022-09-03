@@ -196,3 +196,13 @@ togglePassword.forEach(item => {
     }
   })
 });
+
+
+const btnMenuOpenSideCategory = document.querySelector(".btn-menu-category")
+const sideMenuProducts = document.querySelector(".side-menu-products")
+
+if(btnMenuOpenSideCategory){
+  btnMenuOpenSideCategory.addEventListener("click",function(){
+    sideMenuProducts.classList.toggle("d-none")
+  })
+}
