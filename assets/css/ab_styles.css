@@ -1659,6 +1659,7 @@ footer .footer-item .app-box .link-app {
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
+  z-index: 99;
 }
 .profile .sidemenu .menu-body {
   display: flex;

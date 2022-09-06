@@ -2024,6 +2024,7 @@ footer {
   .sidemenu {
     position: sticky;
     top: 100px;
+    z-index: 99;
 
     .menu-body {
       display: flex;
