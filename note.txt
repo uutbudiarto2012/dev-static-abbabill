@@ -1,0 +1,8 @@
+====== 06 September 2022 =====
+
+- https://dev-static-abbabill.vercel.app/register.html
+- https://dev-static-abbabill.vercel.app/login.html
+- https://dev-static-abbabill.vercel.app/forgot-password.html
+
+- replace css dan js
+- add image illust at assets/img/  = ill-auth.png and ill-forgot.png
