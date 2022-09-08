@@ -54,6 +54,16 @@ body.hiddenFlow {
   scale: 1.03;
   background-color: #f28b1e;
 }
+.btn-ab-buy.outline {
+  background-color: #FFF;
+  border: 1px solid #f28b1e;
+  color: #f28b1e;
+}
+.btn-ab-buy.outline:hover {
+  scale: 1.03;
+  background-color: #f28b1e;
+  color: #FFF;
+}
 
 .btn-ab-del {
   padding: 5px;
@@ -88,18 +98,6 @@ body.hiddenFlow {
 .dropdown .dropdown-menu {
   overflow: hidden;
 }
-.dropdown .dropdown-menu::before {
-  display: block;
-  content: "";
-  background: linear-gradient(to left, #f79c3a, transparent);
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  z-index: -1;
-  top: -20%;
-  right: -20%;
-  border-radius: 50%;
-}
 .dropdown.ab-ctm ul li a {
   font-size: 16px;
 }
@@ -108,18 +106,6 @@ body.hiddenFlow {
   width: 300px;
   position: relative;
   overflow-x: hidden;
-}
-.dropdown.cart-dropdown .dropdown-menu::before {
-  display: block;
-  content: "";
-  background: linear-gradient(to left, #f79c3a, transparent);
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
-  top: 5px;
-  right: 5px;
-  border-radius: 50%;
 }
 .dropdown.cart-dropdown .dropdown-menu .cart-body {
   max-height: 400px;
@@ -225,11 +211,24 @@ body.hiddenFlow {
   border-radius: 5px;
 }
 
+.ill-no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ill-no-data .ill-box {
+  width: 300px;
+  height: 300px;
+}
+.ill-no-data .ill-box img {
+  width: 100%;
+}
+
 .ab_main_nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 9999;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: rgb(255, 255, 255);
 }
@@ -289,6 +288,14 @@ body.hiddenFlow {
 .ab_main_nav .ab_bottom_nav .right .menu-right {
   display: flex;
   align-items: center;
+}
+.ab_main_nav .ab_bottom_nav .right .menu-right.mobile {
+  justify-content: center;
+  align-items: center;
+}
+.ab_main_nav .ab_bottom_nav .right .menu-right.mobile .link-auth i {
+  font-size: 28px;
+  color: #281706;
 }
 .ab_main_nav .ab_bottom_nav .right .menu-right .item ._ic_box {
   border-radius: 6px;
@@ -602,10 +609,25 @@ body.hiddenFlow {
   position: sticky;
   bottom: 0;
   height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.live-box-show .live-chat .form-box .btn-like {
+  background-color: #FFF;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #F00;
+  border: none;
 }
 .live-box-show .live-chat .form-box .form-chat-box {
   display: flex;
   padding: 10px;
+  flex: 1;
 }
 .live-box-show .live-chat .form-box .form-chat-box .inputText {
   flex: 1;
@@ -1361,6 +1383,9 @@ footer .footer-item .app-box .link-app {
   color: #f28b1e;
 }
 
+.detail-product {
+  margin-bottom: 200px;
+}
 .detail-product .media-wrapper {
   position: -webkit-sticky;
   position: sticky;
@@ -1451,25 +1476,86 @@ footer .footer-item .app-box .link-app {
 }
 .detail-product .right-detail {
   margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  z-index: 999;
 }
-.detail-product .right-detail .box-info {
-  background-color: hsl(23deg, 43%, 86%);
-  background-image: radial-gradient(at 40% 20%, hsl(98deg, 73%, 95%) 0px, transparent 50%), radial-gradient(at 0% 50%, hsl(32deg, 100%, 93%) 0px, transparent 50%), radial-gradient(at 80% 50%, hsl(17deg, 100%, 76%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(59deg, 100%, 77%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(20deg, 100%, 76%) 0px, transparent 50%);
+.detail-product .right-detail .form-actions {
+  border: 1px solid #d7d7d7;
   padding: 10px;
   border-radius: 10px;
 }
-.detail-product .right-detail .box-info .item-info {
-  display: flex;
-  margin-bottom: 10px;
+.detail-product .right-detail .form-actions .header-form {
+  font-size: 14px;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 6px;
 }
-.detail-product .right-detail .box-info .item-info i {
-  width: 30px;
+.detail-product .right-detail .form-actions .count-jumlah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EED;
+  border-radius: 8px;
+  flex: 1;
+}
+.detail-product .right-detail .form-actions .count-jumlah:focus-within {
+  border: 1px solid #999;
+}
+.detail-product .right-detail .form-actions .count-jumlah .de {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
   font-size: 22px;
 }
-.detail-product .right-detail .box-info .item-info span {
+.detail-product .right-detail .form-actions .count-jumlah .input-count-buy {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.detail-product .right-detail .form-actions .stock-in-category {
   flex: 1;
-  font-size: 15px;
-  font-weight: 500;
+}
+.detail-product .right-detail .form-actions .act-b {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-product .right-detail .form-actions .act-b .btn-actions {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.detail-product .right-detail .form-actions .act-b .btn-actions .action-in {
+  min-width: 80px;
+  height: 40px;
+}
+.detail-product .right-detail .form-actions .act-b .footer-form-box {
+  border-top: 1px solid transparent;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.detail-product .right-detail .form-actions .act-b .footer-form-box button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #232323;
+  font-size: 14px;
+}
+.detail-product .right-detail .form-actions .act-b .footer-form-box button i {
+  margin-right: 5px;
+}
+.detail-product .right-detail .form-actions .act-b .footer-form-box button i.isLiked {
+  color: #f28b1e;
 }
 .detail-product .action-boxes {
   border-radius: 8px;
@@ -1485,7 +1571,7 @@ footer .footer-item .app-box .link-app {
   display: flex;
   flex-wrap: wrap;
 }
-.detail-product .action-boxes .colors .item-color {
+.detail-product .action-boxes .colors .item-var-main {
   border: 1px solid #f79c3a;
   width: 100px;
   height: 50px;
@@ -1496,77 +1582,48 @@ footer .footer-item .app-box .link-app {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 10px;
   background-color: transparent;
-  color: #fff;
-  background-color: #f79c3a;
+  color: #f79c3a;
+  background-color: rgba(247, 156, 58, 0.2);
   transition: all ease-in-out 0.2s;
 }
-.detail-product .action-boxes .colors .item-color:hover {
+.detail-product .action-boxes .colors .item-var-main:hover {
   color: #fff;
   background-color: #ff8400;
 }
-.detail-product .action-boxes .colors .item-color:focus {
+.detail-product .action-boxes .colors .item-var-main:focus {
   color: #fff;
   background-color: #ff8400;
 }
-.detail-product .action-boxes .act-buy {
+.detail-product .action-boxes .colors .item-var-child {
+  border: 1px solid #f79c3a;
+  min-width: 50px;
+  height: 50px;
+  margin: 3px;
+  padding: 5px;
+  font-size: 12px;
   display: flex;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 10px 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.detail-product .action-boxes .act-buy .count-jumlah {
-  border: 1px solid #ddd;
-  padding: 6px;
-  border-radius: 5px;
-  display: flex;
-}
-.detail-product .action-boxes .act-buy .count-jumlah:focus-within {
-  border: 1px solid #f7bb7a;
-}
-.detail-product .action-boxes .act-buy .count-jumlah button {
-  background-color: transparent;
-  border: transparent;
-  font-size: 22px;
-  width: 30px;
-}
-.detail-product .action-boxes .act-buy .count-jumlah input {
-  background-color: transparent;
-  border: none;
-  outline: none;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #f79c3a;
+  background-color: rgba(247, 156, 58, 0.2);
+  transition: all ease-in-out 0.2s;
 }
-.detail-product .action-boxes .act-buy .btn-cart {
-  background-color: #f28b1e;
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
+.detail-product .action-boxes .colors .item-var-child:hover {
   color: #fff;
+  background-color: #ff8400;
 }
-.detail-product .action-boxes .act-buy .btn-buy {
-  background-color: #f28b1e;
-  height: 40px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
+.detail-product .action-boxes .colors .item-var-child:focus {
   color: #fff;
-  font-size: 13px;
-}
-.detail-product .action-boxes .act-buy .btn-like {
-  background-color: #f28b1e;
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
+  background-color: #ff8400;
 }
 .detail-product .ulasan-item {
   display: flex;
@@ -1659,7 +1716,7 @@ footer .footer-item .app-box .link-app {
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
-  z-index: 99;
+  z-index: 90;
 }
 .profile .sidemenu .menu-body {
   display: flex;
@@ -1676,7 +1733,7 @@ footer .footer-item .app-box .link-app {
 }
 .profile .sidemenu .menu-body.show {
   transform: translateX(0);
-  z-index: 99;
+  z-index: 90;
 }
 .profile .sidemenu .menu-body .menu-item {
   padding: 10px;
@@ -2018,7 +2075,7 @@ footer .footer-item .app-box .link-app {
   width: 200px;
 }
 .auth-page .auth-wrapper .auth-body {
-  height: calc(100vh - 100px - 80px);
+  min-height: calc(100vh - 100px - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2057,6 +2114,9 @@ footer .footer-item .app-box .link-app {
 }
 .auth-page .auth-wrapper .auth-footer {
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .auth-page .auth-wrapper .auth-footer .copyright {
   color: #555;
@@ -2418,7 +2478,7 @@ footer .footer-item .app-box .link-app {
     height: 80px;
   }
   .detail-product .detail-wrapper .product-detail .product-name {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 500;
     color: #333;
   }
@@ -2773,6 +2833,81 @@ footer .footer-item .app-box .link-app {
   }
   .detail-product .media-wrapper .swiper.thumbsSwipper .swiper-wrapper .swiper-slide {
     height: 80px;
+  }
+  .detail-product .right-detail {
+    margin-top: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    z-index: 9;
+  }
+  .detail-product .right-detail .form-actions {
+    border: 1px solid #d7d7d7;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .detail-product .right-detail .form-actions .header-form {
+    font-size: 22px;
+    font-weight: 700;
+    color: #232323;
+    margin-bottom: 10px;
+  }
+  .detail-product .right-detail .form-actions .count-jumlah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EED;
+    border-radius: 8px;
+  }
+  .detail-product .right-detail .form-actions .count-jumlah:focus-within {
+    border: 1px solid #999;
+  }
+  .detail-product .right-detail .form-actions .count-jumlah .de {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+  }
+  .detail-product .right-detail .form-actions .count-jumlah .input-count-buy {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .detail-product .right-detail .form-actions .act-b {
+    display: block;
+  }
+  .detail-product .right-detail .form-actions .act-b .btn-actions {
+    display: block;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .detail-product .right-detail .form-actions .act-b .btn-actions .action-in {
+    width: 100%;
+  }
+  .detail-product .right-detail .form-actions .act-b .footer-form-box {
+    border-top: 1px solid #d7d7d7;
+    padding-top: 10px;
+  }
+  .detail-product .right-detail .form-actions .act-b .footer-form-box button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #232323;
+    font-size: 14px;
+    width: unset;
+  }
+  .detail-product .right-detail .form-actions .act-b .footer-form-box button i {
+    margin-right: 5px;
+  }
+  .detail-product .right-detail .form-actions .act-b .footer-form-box button i.isLiked {
+    color: #f28b1e;
   }
   .hero {
     padding: 10px 0;

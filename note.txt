@@ -6,3 +6,9 @@
 
 - replace css dan js
 - add image illust at assets/img/  = ill-auth.png and ill-forgot.png
+
+
+
+
+=========
+- live streaming ada tambah button dengan class btn-like
