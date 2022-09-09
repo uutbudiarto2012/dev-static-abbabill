@@ -10,5 +10,12 @@
 
 
 
-=========
+========= 
+- seperti biasa timpa css dan js
 - live streaming ada tambah button dengan class btn-like
+- update single produk (opsi produk terkait jika ada fungsinya)
+  https://dev-static-abbabill.vercel.app/detail-product.html
+- tambah ilustrasi /assets/img/empty-box.png
+    - contoh penggunaan di halaman wishlist
+    https://dev-static-abbabill.vercel.app/favorite.html
+- tambah rating dan terjual di card wishlist
