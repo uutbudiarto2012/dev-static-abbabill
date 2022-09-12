@@ -2993,107 +2993,164 @@ footer {
   .divider {
     border: 2px solid #EEE;
     margin: 8px 0;
+
+    &.white {
+      border: 2px solid #FFF;
+    }
   }
 
   .cart-wrapper {
 
-    .cart-item {
+    .cart-box {
       display: flex;
+
 
       .select-item {
         width: 40px;
       }
 
-      .product-item {
-        display: flex;
+      .cart-item {
+        flex: 1;
 
-        .img-box {
-          width: 60px;
-          height: 60px;
-          overflow: hidden;
-          border: 1px solid #eee;
-          border-radius: 8px;
-          margin-right: 8px;
 
-          img {
-            width: 100%;
+        .product-item {
+          display: flex;
+
+          .img-box {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-right: 8px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .info {
+            flex: 1;
+
+            .name {
+              font-size: 14px;
+              font-weight: 500;
+              color: #575757;
+            }
+
+            .price {
+              font-size: 14px;
+              font-weight: 600;
+              color: #232323;
+            }
           }
         }
 
-        .info {
-          flex: 1;
-
-          .name {
-            font-size: 14px;
-            font-weight: 500;
-            color: #575757;
-          }
-
-          .price {
-            font-size: 14px;
-            font-weight: 600;
-            color: #232323;
-          }
-        }
       }
 
-    }
-
-    .count-wrapper {
-      margin: 10px 0;
-      display: flex;
-      justify-content: space-between;
-
-      .info-count {
+      .count-wrapper {
+        margin: 10px 0;
         display: flex;
+        justify-content: space-between;
 
-        .delete-item {
-          background-color: transparent;
-          border: none;
-          font-size: 18px;
-          color: #575757;
-        }
-
-        .count-item {
+        .info-count {
           display: flex;
-          align-items: center;
 
-          button {
+          .delete-item {
             background-color: transparent;
-            border: 1px solid #575757;
+            border: none;
             font-size: 18px;
             color: #575757;
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
+          }
+
+          .count-item {
             display: flex;
-            justify-content: center;
             align-items: center;
+
+            button {
+              background-color: transparent;
+              border: 1px solid #575757;
+              font-size: 18px;
+              color: #575757;
+              border-radius: 50%;
+              height: 30px;
+              width: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            input {
+              width: 60px;
+              margin: 0 4px;
+              border: 1px solid #575757;
+              outline: none;
+              border-radius: 50px;
+              text-align: center;
+              font-weight: 500;
+              padding: 0 4px;
+              height: 30px;
+            }
+          }
+        }
+
+        .total {
+          .total-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f79c3a;
+          }
+        }
+
+      }
+
+      &.in-checkout {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .totals {
+          width: 200px;
+
+          .item-total {
+            .val {
+              font-weight: 600;
+              margin-right: 10px;
+
+            }
+
+            .disc {
+              display: none;
+            }
+
+            &.isDiscount {
+              text-decoration: line-through;
+            }
           }
 
-          input {
-            width: 60px;
-            margin: 0 4px;
-            border: 1px solid #575757;
-            outline: none;
-            border-radius: 50px;
-            text-align: center;
-            font-weight: 500;
-            padding: 0 4px;
-            height: 30px;
+          &.isDiscount {
+            .item-total {
+              .val {
+                text-decoration: line-through;
+              }
+
+              .disc {
+                display: block;
+              }
+            }
           }
+        }
+
+        @media (min-width:767.99px) {
+          flex-direction: row;
+
+          align-items: center;
         }
       }
 
-      .total {
-        .total-text {
-          font-size: 16px;
-          font-weight: 600;
-          color: #f79c3a;
-        }
-      }
 
     }
+
+
   }
 
   .form-wrapper {
@@ -3140,6 +3197,85 @@ footer {
         flex: 1;
         font-size: 17px;
         font-weight: 700;
+      }
+    }
+  }
+
+
+  .address-box {
+    .receiver {
+      display: flex;
+      align-items: center;
+
+      .name {
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      .address-type {
+        background-color: rgba(247, 156, 58, 0.8);
+        font-size: 12px;
+        padding: 3px 5px;
+        border-radius: 10px;
+        color: #FFF;
+      }
+    }
+
+    .form-message {
+      margin: 10px 0;
+
+      .message {
+        width: 100%;
+        border: 1px solid #c0c0c0;
+        resize: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+      }
+    }
+  }
+
+  .right-form {
+    position: sticky;
+    top: 100px;
+
+    .rincian {
+      padding: 10px;
+      border-radius: 6px;
+
+      .title {
+        font-size: 26px;
+        font-weight: 700;
+        color: #575757;
+        margin-bottom: 10px;
+      }
+
+      &.detail {
+        background-color: #EEE;
+      }
+
+      &.payment {
+        margin-top: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .item {
+        display: flex;
+        margin-bottom: 6px;
+        font-size: 14px;
+
+        .key {
+          flex: 1;
+        }
+
+        .eq {
+          width: 20px;
+        }
+
+        .val {
+          flex: 1;
+          font-weight: 600;
+        }
       }
     }
   }

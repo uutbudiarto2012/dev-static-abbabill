@@ -220,17 +220,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="title-cart">Keranjang</div>
-                    <div class="select-all">
-                        <input type="checkbox" id="select-all" name="select-all">
-                        <label for="select-all">Pilih Semua</label>
+                    <div class="title-cart">Periksa Belanjaan</div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="address-box">
+                                <select class="form-custom-input mb-3" name="address-other" id="address-other">
+                                    <option value="">-pilih alamat-</option>
+                                    <option value="alamat-1">alamat-1</option>
+                                    <option value="alamat-2">alamat-2</option>
+                                </select>
+                                <div class="receiver">
+                                    <span class="name">Iliana Vero</span>
+                                    <div class="address-type">Utama</div>
+                                </div>
+                                <div class="address">
+                                    Jln. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, repudiandae.
+                                </div>
+
+                                <div class="form-message">
+                                    <label for="message">Catatan</label>
+                                    <textarea placeholder="tulis catatan" class="message" name="message" id="message"
+                                        rows="3"></textarea>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="cart-wrapper">
-                        <div class="cart-box">
-                            <div class="select-item">
-                                <input type="checkbox" id="select-item" name="select-item">
-                            </div>
+                        <div class="cart-box in-checkout">
                             <div class="cart-item">
                                 <div class="product-item">
                                     <div class="img-box">
@@ -239,40 +259,22 @@
                                     <div class="info">
                                         <span class="d-block name">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.</span>
-                                        <span class="price">Rp 10.000</span>
+                                        <span class="price">10 x Rp 10.000</span>
                                         <div class="varian">
                                             <small>Size : M</small>
                                             <small>Warna : Merah</small>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="count-wrapper">
-                                    <div class="total">
-                                        <div class="total-text">Rp <span>100.000</span></div>
-                                    </div>
-                                    <div class="info-count">
-                                        <button class="delete-item">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                        <div class="count-item">
-                                            <button>
-                                                <i class="bi bi-dash"></i>
-                                            </button>
-                                            <input type="number" value="1" class="input-count">
-                                            <button>
-                                                <i class="bi bi-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
+                            </div>
+                            <div class="totals">
+                                <div class="item-total">
+                                    <div class="val">Rp 200.000</div>
+                                    <small class="disc">Rp 200.000</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="divider"></div>
-                        <div class="cart-box">
-                            <div class="select-item">
-                                <input type="checkbox" id="select-item" name="select-item">
-                            </div>
+                        <div class="cart-box in-checkout">
                             <div class="cart-item">
                                 <div class="product-item">
                                     <div class="img-box">
@@ -281,57 +283,126 @@
                                     <div class="info">
                                         <span class="d-block name">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.</span>
-                                        <span class="price">Rp 10.000</span>
+                                        <span class="price">10 x Rp 10.000</span>
                                         <div class="varian">
                                             <small>Size : M</small>
                                             <small>Warna : Merah</small>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="count-wrapper">
-                                    <div class="total">
-                                        <div class="total-text">Rp <span>100.000</span></div>
-                                    </div>
-                                    <div class="info-count">
-                                        <button class="delete-item">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                        <div class="count-item">
-                                            <button>
-                                                <i class="bi bi-dash"></i>
-                                            </button>
-                                            <input type="number" value="1" class="input-count">
-                                            <button>
-                                                <i class="bi bi-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
+                            </div>
+                            <div class="totals isDiscount">
+                                <div class="item-total">
+                                    <div class="val">Rp 200.000</div>
+                                    <small class="disc">Rp 10.000</small>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="divider"></div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <form class="form-wrapper">
-                        <div class="form-title">
-                            Ringkasan Belanja
-                        </div>
-                        <div class="total">
-                            <span class="key">Total Harga</span>
-                            <span class="val">Rp 200.000</span>
-                        </div>
-                        <div class="grand-total">
-                            <span class="key">Grand Total</span>
-                            <span class="val">Rp 300.000</span>
-                        </div>
+                    <div class="right-form">
+                        <!-- form boleh d hapus -->
+                        <form action="">
+                            <div class="rincian detail">
+                                <div class="title">Rincian Pesanan</div>
+                                <div class="item">
+                                    <span class="key">Service</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Estimasi</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Total items</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="divider white"></div>
+                                <div class="item">
+                                    <span class="key">Total Harga</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">Rp 2.000.000</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Biaya Layanan</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Ongkos Kirim</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Cashback</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">-</div>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Total Tagihan</span>
+                                    <span class="eq">:</span>
+                                    <div class="val">Rp 2.000.000</div>
+                                </div>
+                            </div>
+                            <div class="rincian payment">
+                                <div class="title">Pilih Pembayaran</div>
+                                <div class="mb-3">
+                                    <label for="paymentType" class="mb-2">Jenis Pembayaran</label>
+                                    <select class="form-custom-input" name="paymentType" id="paymentType">
+                                        <option value="">-jenis pembayaran-</option>
+                                        <option value="jenis-1">Jenis 1</option>
+                                        <option value="jenis-2">Jenis 2</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="paymentMethod" class="mb-2">Metode Pembayaran</label>
+                                    <select class="form-custom-input" name="paymentMethod" id="paymentMethod">
+                                        <option value="">-metode pembayaran-</option>
+                                        <option value="jenis-1">Jenis 1</option>
+                                        <option value="jenis-2">Jenis 2</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="shipType" class="mb-2">Pilih Pengiriman</label>
+                                    <select class="form-custom-input" name="shipType" id="shipType">
+                                        <option value="">-pilih pengiriman-</option>
+                                        <option value="jenis-1">Jenis 1</option>
+                                        <option value="jenis-2">Jenis 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="info-ship my-3">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item border-0 shadow">
+                                        <button class="accordion-button shadow-none collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                            <b>Informasi Self Pickup ?</b>
+                                        </button>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <span class="text-muted">
+                                                    Self Pickup adalah membeli barang secara online dan pembeli sendiri
+                                                    yang mengambil barang ke lokasi vendor di jl.tss raya no.94, DURI
+                                                    SELATAN, TAMBORA, JAKARTA BARAT, DAERAH KHUSUS IBUKOTA JAKARTA.
+                                                    11270 dengan waktu yang telah di tentukan.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <button class="btn-ab-buy py-2 mt-3">Lajutkan Pesanan</button>
+                            </div>
+                        </form>
+                    </div>
 
-                        <a href="checkout.html" class="btn-ab-buy py-2 mb-2">Chekout</a>
-                        <!-- TUKAR JADI BUTTON JIKA PAKAI FORM -->
-                        <!-- <button class="btn-ab-buy py-2 mb-2">Chekout</button> -->
-                        <a href="product.html" class="btn-ab-buy py-2 mb-2 outline">Belanja Lainya</a>
-                    </form>
                 </div>
             </div>
         </div>

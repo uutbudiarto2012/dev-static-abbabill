@@ -10,7 +10,7 @@
 
 
 
-========= 
+=========  08 September 2022 =====
 - seperti biasa timpa css dan js
 - live streaming ada tambah button dengan class btn-like
 - update single produk (opsi produk terkait jika ada fungsinya)
@@ -19,3 +19,13 @@
     - contoh penggunaan di halaman wishlist
     https://dev-static-abbabill.vercel.app/favorite.html
 - tambah rating dan terjual di card wishlist
+
+
+
+=========  09 September 2022 =======
+- Halaman Keranjang
+  https://dev-static-abbabill.vercel.app/keranjang.html
+- Halaman Order detail
+  https://dev-static-abbabill.vercel.app/order-detail.html
+- Halaman Print Invoice
+  https://dev-static-abbabill.vercel.app/invoice-print.html
