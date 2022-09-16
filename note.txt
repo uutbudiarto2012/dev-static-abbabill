@@ -1,31 +1,19 @@
-====== 06 September 2022 =====
-
-- https://dev-static-abbabill.vercel.app/register.html
-- https://dev-static-abbabill.vercel.app/login.html
-- https://dev-static-abbabill.vercel.app/forgot-password.html
-
-- replace css dan js
-- add image illust at assets/img/  = ill-auth.png and ill-forgot.png
+- footer maksimal 2 (kanan ujung jadi improve) 1) = DONE
+- tambah illustrasi footer = DOME
+- pading card 2) = DONE
+- banner all produk = DONE
+- paginantion = DONE
+- tambah halaman product-store = DONE
 
 
+- detail produk pas pilihan varian persegi panjang 3)
+- ulasan ada gambar (max 3), video(1), pagination 4)
+
+- pengaduan (balasan)
+- popup pengaduan fieldnya kurang
+- tombol pengaduan di kiri
+
+- rincian & detail pembayaran (manual dan qris)
 
 
-=========  08 September 2022 =====
-- seperti biasa timpa css dan js
-- live streaming ada tambah button dengan class btn-like
-- update single produk (opsi produk terkait jika ada fungsinya)
-  https://dev-static-abbabill.vercel.app/detail-product.html
-- tambah ilustrasi /assets/img/empty-box.png
-    - contoh penggunaan di halaman wishlist
-    https://dev-static-abbabill.vercel.app/favorite.html
-- tambah rating dan terjual di card wishlist
-
-
-
-=========  09 September 2022 =======
-- Halaman Keranjang
-  https://dev-static-abbabill.vercel.app/keranjang.html
-- Halaman Order detail
-  https://dev-static-abbabill.vercel.app/order-detail.html
-- Halaman Print Invoice
-  https://dev-static-abbabill.vercel.app/invoice-print.html
+- keranjang, subtotal pindah ke kanan

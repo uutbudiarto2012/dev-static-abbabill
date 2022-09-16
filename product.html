@@ -615,25 +615,32 @@
                 </a>
               </div>
             </div>
-            <nav class="pagination-custom">
-              <ul class="pagination justify-content-center">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <i class="bi bi-chevron-left"></i>
-                  </a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <i class="bi bi-chevron-right"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div class="pagination-custom">
+              <nav class="pagination" id="pagination">
+                <div class="paginationjs">
+                  <div class="paginationjs-pages">
+                    <ul>
+                      <li class="paginationjs-prev disabled">
+                        <a><i class="bi bi-chevron-left"></i></a>
+                      </li>
+                      <li data-num="1" class="paginationjs-page J-paginationjs-page active">
+                        <a>1</a>
+                      </li>
+                      <li data-num="2" class="paginationjs-page J-paginationjs-page">
+                        <a>2</a>
+                      </li>
+                      <li data-num="3" class="paginationjs-page J-paginationjs-page">
+                        <a>3</a>
+                      </li>
+                      <li class="paginationjs-next disabled">
+                        <a><i class="bi bi-chevron-right"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
           </div>
         </div>
       </div>

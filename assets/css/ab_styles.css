@@ -451,6 +451,15 @@ body.hiddenFlow {
   height: 100%;
 }
 
+.banner-wrapper {
+  max-height: 216px;
+}
+.banner-wrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .top-category-box {
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -924,7 +933,7 @@ body.hiddenFlow {
      object-fit: contain;
 }
 .card-product .body {
-  padding: 3px;
+  padding: 10px;
 }
 .card-product .body .product-name {
   height: 50px;
@@ -1052,8 +1061,22 @@ body.hiddenFlow {
 }
 
 footer {
-  background-color: #f9dfc3;
+  position: relative;
+  background: linear-gradient(#efcaa3, #FFF);
   border-top: 2px solid #f7bb7a;
+}
+footer .ill-foo-02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 200px;
+}
+footer .ill-foo-02 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 footer .main-footer {
   padding: 20px 0;
@@ -1125,6 +1148,24 @@ footer .footer-item .app-box .link-app {
   color: #eee;
   padding: 10px;
   border-radius: 5px;
+}
+footer .footer-item .services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+footer .footer-item .services .service-item {
+  margin-right: 10px;
+}
+footer .footer-item .services .service-item .payment {
+  width: 100%;
+}
+footer .footer-item .ill-01 {
+  width: 190px;
+  height: 190px;
+}
+footer .footer-item .ill-01 .ill-footer-left {
+  width: 100px;
 }
 
 .mobile-menus {
@@ -1382,6 +1423,38 @@ footer .footer-item .app-box .link-app {
   font-weight: 600;
   font-size: 18px;
 }
+.product-content .pagination-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-content .pagination-custom .pagination .paginationjs-pages ul {
+  display: flex;
+  list-style: none;
+}
+.product-content .pagination-custom .pagination .paginationjs-pages ul li {
+  color: #FFF;
+  background-color: #efcaa3;
+  height: 35px;
+  width: 35px;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+.product-content .pagination-custom .pagination .paginationjs-pages ul li:hover {
+  background-color: #f79c3a;
+}
+.product-content .pagination-custom .pagination .paginationjs-pages ul li.active {
+  color: #FFF;
+  background-color: #f79c3a;
+}
+.product-content .pagination-custom .pagination .paginationjs-pages ul li a {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 .product-content .pagination-custom .pagination .page-item.active .page-link {
   background-color: #f79c3a;
   color: #fff;
@@ -1389,6 +1462,67 @@ footer .footer-item .app-box .link-app {
 }
 .product-content .pagination-custom .pagination .page-item .page-link {
   color: #f28b1e;
+}
+
+.store-wrapper {
+  background-color: #FFF;
+  margin-top: 10px;
+}
+.store-wrapper .store-info {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: url("/assets/img/bg-store.png");
+}
+.store-wrapper .store-info .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.store-wrapper .store-info .left .img-box {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  border: 3px solid #bbb9b9;
+  background-color: #EEE;
+}
+.store-wrapper .store-info .left .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.store-wrapper .detail-box {
+  color: #FFF;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.store-wrapper .detail-box .name-store {
+  font-size: 15px;
+  font-weight: 500;
+}
+.store-wrapper .detail-box .email-store {
+  font-size: 13px;
+  font-weight: 400;
+}
+.store-wrapper .act-info .item {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  color: #FFF;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.store-wrapper .act-info .item .val {
+  margin: 0 7px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.store-wrapper .act-info .item .key {
+  font-size: 12px;
 }
 
 .detail-product {
@@ -1466,6 +1600,7 @@ footer .footer-item .app-box .link-app {
   top: 88px;
   background-color: #fff;
   border-bottom: none;
+  z-index: 10;
 }
 .detail-product .tab-wrapper .nav-tabs .nav-item .nav-link {
   border: none;
@@ -1582,7 +1717,7 @@ footer .footer-item .app-box .link-app {
 .detail-product .action-boxes .colors .item-var-main {
   border: 1px solid #f79c3a;
   width: 100px;
-  height: 50px;
+  height: 35px;
   margin: 3px;
   padding: 5px;
   font-size: 12px;
@@ -1665,6 +1800,33 @@ footer .footer-item .app-box .link-app {
 .detail-product .ulasan-item .text-box .message-box {
   max-width: 640px;
   overflow-wrap: break-word;
+}
+.detail-product .ulasan-item .text-box .message-box .message-media .media-wrapper {
+  display: flex;
+  padding: 10px 0;
+}
+.detail-product .ulasan-item .text-box .message-box .message-media .media-wrapper .media-ulasan {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #EEE;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.detail-product .ulasan-item .text-box .message-box .message-media .media-wrapper .media-ulasan.video {
+  position: relative;
+  z-index: 1;
+}
+.detail-product .ulasan-item .text-box .message-box .message-media .media-wrapper .media-ulasan.video .btn-play {
+  background-color: rgba(242, 140, 30, 0.6);
+  color: #FFF;
+  border: none;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  border-radius: 50px;
 }
 @media (max-width: 576px) {
   .detail-product .ulasan-item .text-box .message-box {
@@ -3401,6 +3563,18 @@ footer .footer-item .app-box .link-app {
     justify-content: center;
     align-items: center;
     border: none;
+  }
+  .product-content .form-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 17px 10px;
+    border-radius: 5px;
+  }
+  .product-content .form-filter .filter-wrapper {
+    flex: 1;
   }
   .product-content .form-filter .filter-wrapper .filter-actions .action-filter {
     padding: 7px 10px;
