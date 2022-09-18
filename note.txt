@@ -4,10 +4,9 @@
 - banner all produk = DONE
 - paginantion = DONE
 - tambah halaman product-store = DONE
-
-
-- detail produk pas pilihan varian persegi panjang 3)
-- ulasan ada gambar (max 3), video(1), pagination 4)
+  = https://dev-static-abbabill.vercel.app/product-store.html
+- detail produk pas pilihan varian persegi panjang 3) = DONE
+- ulasan ada gambar (max 3), video(1), pagination 4) = DONE
 
 - pengaduan (balasan)
 - popup pengaduan fieldnya kurang

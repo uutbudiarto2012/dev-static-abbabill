@@ -2115,7 +2115,19 @@ footer {
 
     .colors {
       display: flex;
-      flex-wrap: wrap;
+
+      @media (min-width:575.99px) {
+        flex-wrap: wrap;
+      }
+
+      .swiper-slide {
+        width: 100px;
+        margin-right: 10px;
+
+        &.subVar {
+          width: 50px;
+        }
+      }
 
       .item-var-main {
         border: 1px solid #f79c3a;

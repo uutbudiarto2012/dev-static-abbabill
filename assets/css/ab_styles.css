@@ -1712,7 +1712,18 @@ footer .footer-item .ill-01 .ill-footer-left {
 }
 .detail-product .action-boxes .colors {
   display: flex;
-  flex-wrap: wrap;
+}
+@media (min-width: 575.99px) {
+  .detail-product .action-boxes .colors {
+    flex-wrap: wrap;
+  }
+}
+.detail-product .action-boxes .colors .swiper-slide {
+  width: 100px;
+  margin-right: 10px;
+}
+.detail-product .action-boxes .colors .swiper-slide.subVar {
+  width: 50px;
 }
 .detail-product .action-boxes .colors .item-var-main {
   border: 1px solid #f79c3a;

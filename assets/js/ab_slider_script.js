@@ -228,6 +228,57 @@ var swiper2 = new Swiper(".mainSwipper", {
   },
 });
 
+// if (window.innerWidth <= 576) {
+
+//   var swiperThumbs = new Swiper(".mainVarianSwipper", {
+//     spaceBetween: 5,
+//     slidesPerView: 3,
+//     freeMode: true,
+//     watchSlidesProgress: true,
+//   });
+// }
+
+var init = false;
+function swiperMainVar() {
+  if (window.innerWidth <= 576) {
+    if (!init) {
+      init = true;
+      swiperMainVarian = new Swiper(".mainVarianSwipper", {
+        spaceBetween: 5,
+        freeMode: true,
+        slidesPerView: 3,
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
+  }
+}
+swiperMainVar();
+window.addEventListener("resize", swiperMainVar);
+var initSub = false;
+function swiperSubVar() {
+  if (window.innerWidth <= 576) {
+    if (!init) {
+      initSub = true;
+      swiperSubVarian = new Swiper(".subVarianSwipper", {
+        spaceBetween: 5,
+        freeMode: true,
+        slidesPerView: 10,
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    initSub = false;
+  }
+}
+swiperSubVar();
+window.addEventListener("resize", swiperSubVar);
+
+
+
+// mainVarianSwipper
+
 const inputCountBuy = document.querySelector(".input-count-buy");
 const inputCountWishlist = document.querySelector(".input-count-buy-for-wishlist");
 const fixQTY = document.querySelector("#fix_qty");
@@ -268,4 +319,19 @@ if (itemVarMains) {
     })
   });
 
+}
+
+
+
+// HANDLE SLIDE VARIAN SELECTED
+const itemVarMain = document.querySelectorAll(".item-var-main")
+if (itemVarMain.length > 0) {
+  itemVarMain.forEach(item => {
+    item.addEventListener("click", function () {
+      const btnVarian = item.getAttribute("data-varian")
+      const t = document.querySelector(".mainSwipper .swiper-slide.swiper-slide-active img")
+      t && t.setAttribute("src", btnVarian)
+
+    })
+  });
 }
