@@ -589,10 +589,15 @@ body.hiddenFlow {
 }
 
 .banner-wrapper {
-  max-height: 216px;
+  height: 116px;
+
+  @media (min-width:768px) {
+    height: 200px;
+  }
 
   img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 }
