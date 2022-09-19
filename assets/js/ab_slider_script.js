@@ -335,3 +335,19 @@ if (itemVarMain.length > 0) {
     })
   });
 }
+
+
+// HANDLE POPUP MEDIA ULASAN
+const btnPlayVideoUlasan = $(".btn-play")
+if (btnPlayVideoUlasan) {
+  btnPlayVideoUlasan.on("click", async function () {
+    var target = $(this).data('bs-target');
+    const srcVideo = await $(this).prev().attr("src")
+    // $("#modalMediaVideo video source").attr("src", srcVideo)
+    $(target).modal({ show: true });
+  })
+}
+// $("#modalMediaVideo").on("show.bs.modal", function () {
+//   console.log(srcVideo)
+// })
+// HANDLE POPUP MEDIA ULASAN

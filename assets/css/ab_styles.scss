@@ -1882,6 +1882,7 @@ footer {
 }
 
 
+
 .detail-product {
   margin-bottom: 200px;
 
@@ -2287,6 +2288,36 @@ footer {
       font-size: 22px;
       font-weight: 700;
       color: #f28b1e;
+    }
+  }
+}
+
+.mediaPlayer {
+  .modal-dialog {
+    .modal-content {
+      background-color: transparent;
+      border-radius: 10px;
+      position: relative;
+      border: none;
+
+      .modal-body {
+        .video-player {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+
+      .btn-close-modal {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background-color: #FFF;
+        border-radius: 50%;
+        color: #000;
+        border: none;
+        border: 1px solid #EEE;
+        z-index: 99;
+      }
     }
   }
 }

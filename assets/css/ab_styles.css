@@ -1859,6 +1859,28 @@ footer .footer-item .ill-01 .ill-footer-left {
   color: #f28b1e;
 }
 
+.mediaPlayer .modal-dialog .modal-content {
+  background-color: transparent;
+  border-radius: 10px;
+  position: relative;
+  border: none;
+}
+.mediaPlayer .modal-dialog .modal-content .modal-body .video-player {
+  width: 100%;
+  border-radius: 10px;
+}
+.mediaPlayer .modal-dialog .modal-content .btn-close-modal {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #FFF;
+  border-radius: 50%;
+  color: #000;
+  border: none;
+  border: 1px solid #EEE;
+  z-index: 99;
+}
+
 .profile .account-welcome {
   display: flex;
   align-items: center;
