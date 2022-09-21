@@ -8,9 +8,9 @@
 - detail produk pas pilihan varian persegi panjang 3) = DONE
 - ulasan ada gambar (max 3), video(1), pagination 4) = DONE
 
-- pengaduan (balasan)
-- popup pengaduan fieldnya kurang
-- tombol pengaduan di kiri
+- pengaduan (balasan) = DONE
+- popup pengaduan fieldnya kurang = DONE
+- tombol pengaduan di kiri = DONE
 
 - rincian & detail pembayaran (manual dan qris)
 
