@@ -3137,6 +3137,69 @@ footer {
         }
       }
     }
+
+    .info-payment-req {
+      margin: 10px 0;
+
+      &.guide {
+        font-size: 14px;
+
+        .title-guide {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .item {
+          display: flex;
+
+          .key {
+            width: 130px;
+          }
+
+          .eq {
+            width: 10px;
+            margin-right: 8px;
+          }
+
+          .val {
+            flex: 1;
+            font-size: unset;
+            font-weight: unset;
+            color: unset;
+          }
+        }
+      }
+
+      .item {
+        display: flex;
+
+        .key {
+          width: 130px;
+        }
+
+        .eq {
+          width: 10px;
+
+          &.guide {
+            margin-right: 5px;
+          }
+        }
+
+        .val {
+          flex: 1;
+          font-size: 18px;
+          font-weight: 600;
+          color: #f28b1e;
+
+          // &.guide {
+          //   font-size: 16px;
+          //   font-weight: 400;
+          //   color: unset;
+          // }
+        }
+      }
+    }
   }
 
   .divider-inv {

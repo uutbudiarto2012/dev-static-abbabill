@@ -2527,6 +2527,51 @@ footer .footer-item .ill-01 .ill-footer-left {
 .order-detail .header .invoice-info .item .val {
   font-size: 14px;
 }
+.order-detail .header .info-payment-req {
+  margin: 10px 0;
+}
+.order-detail .header .info-payment-req.guide {
+  font-size: 14px;
+}
+.order-detail .header .info-payment-req.guide .title-guide {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.order-detail .header .info-payment-req.guide .item {
+  display: flex;
+}
+.order-detail .header .info-payment-req.guide .item .key {
+  width: 130px;
+}
+.order-detail .header .info-payment-req.guide .item .eq {
+  width: 10px;
+  margin-right: 8px;
+}
+.order-detail .header .info-payment-req.guide .item .val {
+  flex: 1;
+  font-size: unset;
+  font-weight: unset;
+  color: unset;
+}
+.order-detail .header .info-payment-req .item {
+  display: flex;
+}
+.order-detail .header .info-payment-req .item .key {
+  width: 130px;
+}
+.order-detail .header .info-payment-req .item .eq {
+  width: 10px;
+}
+.order-detail .header .info-payment-req .item .eq.guide {
+  margin-right: 5px;
+}
+.order-detail .header .info-payment-req .item .val {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f28b1e;
+}
 .order-detail .divider-inv {
   height: 3px;
   background-color: #EEE;

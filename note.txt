@@ -16,11 +16,4 @@
 - rincian & detail pembayaran (manual dan qris)
 
 
-- keranjang, subtotal pindah ke kanan
-
-
-slider varian detail product (mobile only)
-email template:
-https://dev-static-abbabill.vercel.app/email-forgot-password.html
-https://dev-static-abbabill.vercel.app/email-change-confirmation.html
-https://dev-static-abbabill.vercel.app/email-order.html
+- keranjang, subtotal pindah ke kanan = DONE

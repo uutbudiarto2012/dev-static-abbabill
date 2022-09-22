@@ -225,31 +225,70 @@
         <section class="order-detail">
             <div class="container">
                 <div class="header">
-                    <div class="title-wrapper">
+                    <div class="title-wrapper mb-5">
                         <h1 class="title">Detail Transaksi</h1>
                     </div>
-                    <div class="info-status">
-                        <span class="status-order">Selesai</span>
-                        <button class="btn-track">Lihat Detail</button>
-                    </div>
-                    <div class="invoice-info">
-                        <div class="item">
-                            <span class="key">No. Invoice</span>
-                            <span class="val">AB-0010927917</span>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="info-status">
+                                <span class="status-order">Selesai</span>
+                                <button class="btn-track">Lihat Detail</button>
+                            </div>
+                            <div class="invoice-info">
+                                <div class="item">
+                                    <span class="key">No. Invoice</span>
+                                    <span class="val">AB-0010927917</span>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Tgl. Transaksi</span>
+                                    <span class="val">12-12-2022 19:00</span>
+                                </div>
+                                <div class="row g-0 justify-content-start">
+                                    <div class="col-lg-2 pt-3">
+                                        <a href="invoice-print.html" class="btn-ab-buy py-2">
+                                            <span>Print Invoice</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <span class="key">Tgl. Transaksi</span>
-                            <span class="val">12-12-2022 19:00</span>
-                        </div>
-                        <div class="row g-0 justify-content-start">
-                            <div class="col-lg-2 pt-3">
-                                <a href="invoice-print.html" class="btn-ab-buy py-2">
-                                    <span>Print Invoice</span>
-                                </a>
-                                <!-- <button class="btn-ab-buy py-2">
-                                    <span>Print Invoice</span>
-                                </button> -->
-
+                        <div class="col-lg-6">
+                            <div class="info-payment-req">
+                                <div class="item">
+                                    <div class="key">Total Bayar</div>
+                                    <div class="eq">:</div>
+                                    <div class="val">Rp 36,823</div>
+                                </div>
+                                <div class="item">
+                                    <div class="key">Bayar Sebelum</div>
+                                    <div class="eq">:</div>
+                                    <div class="val">INI TIMERNYA </div>
+                                </div>
+                            </div>
+                            <div class="divider-inv"></div>
+                            <div class="info-payment-req guide">
+                                <div class="title-guide">Cara Pembayaran :</div>
+                                <div class="item">
+                                    <div class="eq guide">1.</div>
+                                    <div class="val guide">Transfer Ke Rekening</div>
+                                </div>
+                                <div class="item">
+                                    <div class="eq guide">2.</div>
+                                    <div class="val guide"> Kirim Bukti Transfer melalui Konfirmasi Pembayaran</div>
+                                </div>
+                                <div class="item">
+                                    <div class="eq guide">3.</div>
+                                    <div class="val guide">Barang bisa di pickup setelah pembayaran di konfirmasi</div>
+                                </div>
+                                <div class="item">
+                                    <div class="eq guide">4.</div>
+                                    <div class="val guide">Barang bisa di pickup sesuai jam kerja toko.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn-ab-buy py-2">Konfirmasi Pembayaran</button>
+                                </div>
                             </div>
                         </div>
                     </div>

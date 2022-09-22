@@ -68,33 +68,37 @@
             <div class="container">
                 <div class="menus">
                     <div class="left">
-                        <div class="logo">
+                        <a href="index.html" class="logo">
                             <img class="logo-full d-none d-md-block" src="/assets/img/main_logo.png" alt="" />
                             <img class="logo-img d-block d-md-none" src="/assets/img/logo-img.png" alt="" />
-                        </div>
+                        </a>
                     </div>
                     <div class="center">
-                        <form action="">
-                            <div class="search-wrapper">
-                                <input type="text" placeholder="cari..." />
-                                <button class="ic_search">
-                                    <i class="bi bi-search"></i>
-                                </button>
-                            </div>
-                        </form>
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="cari..." />
+                            <button class="ic_search">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="right">
                         <!-- isLoggedIn === FALSE -->
-                        <div class="menu-right auth-wrapper d-none d-md-flex justify-content-end align-items-center">
-                            <button class="auth login" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Masuk
-                            </button>
-                            <a href="register.html" class="auth register">Daftar</a>
-                        </div>
+                        <!-- <div
+                class="menu-right auth-wrapper d-none d-md-flex justify-content-end align-items-center"
+              >
+                <button
+                  class="auth login"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Masuk
+                </button>
+                <a href="#" class="auth register">Daftar</a>
+              </div> -->
                         <!-- isLoggedIn === FALSE -->
 
                         <!-- isLoggedIn === TRUE -->
-                        <div class="menu-right loggedIn d-none">
+                        <div class="menu-right loggedIn">
                             <a href="#" class="item d-none d-lg-flex">
                                 <div class="_ic_box">
                                     <div class="count-item">88</div>
@@ -110,7 +114,7 @@
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-end mt-3">
                                         <div class="cart-body">
-
+                                            <!-- IS CART !EMPTY -->
                                             <div class="cart-item">
                                                 <div class="img-box">
                                                     <img src="/assets/img/products/1.png" alt="" />
@@ -135,6 +139,7 @@
                                                     <span class="count">5 Produk</span>
                                                 </div>
                                             </div>
+                                            <!-- IS CART !EMPTY -->
 
                                             <!-- IS CART EMPTY -->
                                             <!-- <div class="cart-empty">
@@ -216,100 +221,207 @@
         </div>
     </div>
 
-    <main class="main-content cart">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-cart">Keranjang</div>
-                    <div class="select-all">
-                        <input type="checkbox" id="select-all" name="select-all">
-                        <label for="select-all">Pilih Semua</label>
+    <main class="main-content">
+        <section class="order-detail">
+            <div class="container">
+                <div class="header">
+                    <div class="title-wrapper mb-5">
+                        <h1 class="title">Detail Transaksi</h1>
                     </div>
-                    <div class="divider"></div>
-                    <div class="cart-wrapper">
-                        <div class="cart-box">
-                            <div class="select-item">
-                                <input type="checkbox" id="select-item" name="select-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="info-status">
+                                <span class="status-order">Selesai</span>
+                                <button class="btn-track">Lihat Detail</button>
                             </div>
-                            <div class="cart-item">
-                                <div class="row">
-                                    <div class="product-item col-md-8">
-                                        <div class="img-box">
-                                            <img src="/assets/img/products/5.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <span class="d-block name">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing
-                                                elit.</span>
-                                            <span class="price">Rp 10.000</span>
-                                            <div class="varian">
-                                                <small>Size : M</small>
-                                                <small>Warna : Merah</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="total d-flex align-items-center justify-content-center d-md-block col-md-4">
-                                        <div class="d-flex justify-content-lg-end">
-                                            <div class="total-text">Rp <span>1.000.000</span></div>
-                                            <button class="delete-item ms-2">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
-                                        </div>
-                                        <div class="count-wrapper justify-content-lg-end">
-                                            <div class="info-count">
-                                                <div class="count-item">
-                                                    <button>
-                                                        <i class="bi bi-dash"></i>
-                                                    </button>
-                                                    <input type="number" value="1" class="input-count">
-                                                    <button>
-                                                        <i class="bi bi-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                            <div class="invoice-info">
+                                <div class="item">
+                                    <span class="key">No. Invoice</span>
+                                    <span class="val">AB-0010927917</span>
+                                </div>
+                                <div class="item">
+                                    <span class="key">Tgl. Transaksi</span>
+                                    <span class="val">12-12-2022 19:00</span>
+                                </div>
+                                <div class="row g-0 justify-content-start">
+                                    <div class="col-lg-2 pt-3">
+                                        <a href="invoice-print.html" class="btn-ab-buy py-2">
+                                            <span>Print Invoice</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="divider"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="form-left-container">
-                        <form class="form-wrapper">
-                            <div class="form-title">
-                                Ringkasan Belanja
+                        <div class="col-lg-6">
+                            <div class="info-payment-req">
+                                <div class="item">
+                                    <div class="key">Total Bayar</div>
+                                    <div class="eq">:</div>
+                                    <div class="val">Rp 36,823</div>
+                                </div>
+                                <div class="item">
+                                    <div class="key">Bayar Sebelum</div>
+                                    <div class="eq">:</div>
+                                    <div class="val">INI TIMERNYA </div>
+                                </div>
                             </div>
-                            <div class="total">
-                                <span class="key">Total Harga</span>
-                                <span class="val">Rp 200.000</span>
+                            <div class="divider-inv"></div>
+                            <div class="info-payment-req guide">
+                                <div class="title-guide">Cara Pembayaran :</div>
+                                <div class="item">
+                                    <div class="eq guide">1.</div>
+                                    <div class="val guide">Silahkan buka aplikasi pembayaran pilihan Anda</div>
+                                </div>
+                                <div class="item">
+                                    <div class="eq guide">2.</div>
+                                    <div class="val guide">Silahkan Scan QRCODE atau ketikan nomor</div>
+                                </div>
                             </div>
-                            <div class="grand-total">
-                                <span class="key">Grand Total</span>
-                                <span class="val">Rp 300.000</span>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <img src="/assets/img/qr-sample.png" alt="qr" id="qrocde">
+                                        <b class="d-block">0897-9988-9999</b>
+                                    </div>
+                                </div>
                             </div>
-
-                            <a href="checkout.html" class="btn-ab-buy py-2 mb-2">Chekout</a>
-                            <!-- TUKAR JADI BUTTON JIKA PAKAI FORM -->
-                            <!-- <button class="btn-ab-buy py-2 mb-2">Chekout</button> -->
-                            <a href="product.html" class="btn-ab-buy py-2 mb-2 outline">Belanja Lainya</a>
-                        </form>
-                        <div class="box-ill px-5">
-                            <img src="/assets/img/ill-rating.png" class="img-fluid" alt="">
                         </div>
-
                     </div>
                 </div>
+                <div class="divider-inv"></div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="body">
+                            <div class="title-body">
+                                <span>Detail Produk</span>
+                            </div>
+                            <div class="products">
+                                <div class="product">
+                                    <div class="left">
+                                        <div class="img-box">
+                                            <img src="/assets/img/products/3.png" alt="">
+                                        </div>
+                                        <div class="text-box">
+                                            <a href="#" class="link-product">Nama Lorem, ipsum dolor. Lorem, ipsum.</a>
+                                            <span class="price-count">2 x Rp 200.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="total">
+                                            <span class="key-total">Total Harga</span>
+                                            <span class="val-total">Rp 400.000</span>
+                                        </div>
+                                        <button class="btn-ab-buy outline sm">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="left">
+                                        <div class="img-box">
+                                            <img src="/assets/img/products/1.png" alt="">
+                                        </div>
+                                        <div class="text-box">
+                                            <a href="#" class="link-product">Nama Lorem, ipsum dolor. Lorem, ipsum.</a>
+                                            <span class="price-count">4 x Rp 25.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="total">
+                                            <span class="key-total">Total Harga</span>
+                                            <span class="val-total">Rp 100.000</span>
+                                        </div>
+                                        <button class="btn-ab-buy outline sm">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="left">
+                                        <div class="img-box">
+                                            <img src="/assets/img/products/2.png" alt="">
+                                        </div>
+                                        <div class="text-box">
+                                            <a href="#" class="link-product">Nama Lorem, ipsum dolor. Lorem, ipsum.</a>
+                                            <span class="price-count">5 x Rp 20.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="total">
+                                            <span class="key-total">Total Harga</span>
+                                            <span class="val-total">Rp 100.000</span>
+                                        </div>
+                                        <button class="btn-ab-buy outline sm">Beli Lagi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="ill-wrapper">
+                            <img class="img-fluid" src="/assets/img/ill-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="rincian-box payment-info">
+                            <div class="title">
+                                <span class="text">Rincian Pembayaran</span>
+                            </div>
+                            <div class="rincian-item">
+                                <span class="key">Metode Pembayaran</span>
+                                <span class="val">BCA Virtual Account</span>
+                            </div>
+                            <div class="sparator-rincian"></div>
+                            <div class="rincian-item">
+                                <span class="key">Total Harga (3 barang)</span>
+                                <span class="val">Rp 600.000</span>
+                            </div>
+                            <div class="sparator-rincian"></div>
+                            <div class="rincian-item">
+                                <span class="key">Total Ongkos Kirim (1.20 kg)</span>
+                                <span class="val">Rp10.000</span>
+                            </div>
+                            <div class="sparator-rincian"></div>
+                            <div class="rincian-item grand">
+                                <span class="key">Total Belanja</span>
+                                <span class="val">Rp457.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rincian-box">
+                            <div class="title">
+                                <span class="text">Info Pengiriman</span>
+                            </div>
+                            <div class="rincian-item">
+                                <span class="key">Kurir</span>
+                                <span class="val">JNE - REG</span>
+                            </div>
+                            <div class="rincian-item">
+                                <span class="key">No Resi</span>
+                                <span class="val">10005223256089</span>
+                            </div>
+                            <div class="rincian-item">
+                                <span class="key">Alamat</span>
+                                <div class="val">
+                                    <span class="d-block recevier">Jhon penerima</span>
+                                    <span class="d-block phone">6289699009090</span>
+                                    <span class="address">Jln Peta Selatan No 6AE Kalideres RT 07 RW 11 sebelah sicepat
+                                        Kalideres, Kota Administrasi Jakarta Barat
+                                        DKI Jakarta 11840</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </div>
+        </section>
     </main>
 
     <section class="mobile-menus d-flex d-lg-none">
         <div class="menu-wrapper">
-            <a href="index.html" class="item active">
+            <a href="index.html" class="item">
                 <div class="icon"><i class="bi bi-house-fill"></i></div>
                 <span>Home</span>
             </a>
@@ -321,13 +433,12 @@
                 <div class="icon"><i class="bi bi-heart-fill"></i></div>
                 <span>Favorit</span>
             </a>
-            <a href="profile.html" class="item">
+            <a href="profile.html" class="item active">
                 <div class="icon"><i class="bi bi-person-circle"></i></div>
                 <span>Profile</span>
             </a>
         </div>
     </section>
-
     <footer class="d-none d-lg-block">
         <div class="ill-foo-02">
             <img class="img-ill-foo-02" src="/assets/img/ill-foo-02.png" alt="">
