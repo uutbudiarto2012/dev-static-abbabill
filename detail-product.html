@@ -506,7 +506,7 @@
                         </div>
                         <div class="message-box">
                           <div class="message-media" id="rate-media">
-                            <div class="media-wrapper">
+                            <!-- <div class="media-wrapper" id="test">
                               <a href="assets/img/products/1.png" class="glightbox">
                                 <img class="media-ulasan" src="/assets/img/products/1.png" alt="">
                               </a>
@@ -523,7 +523,7 @@
                                   <i class="bi bi-play"></i>
                                 </button>
                               </a>
-                            </div>
+                            </div> -->
                           </div>
                           <span class="message-text">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit
@@ -994,13 +994,25 @@
   <script src="/assets/js/ab_slider_script.js"></script>
 
   <script>
+    $('#rate-media').html(`
+        <a href="assets/img/products/1.png" class="glightbox">
+           <img class="media-ulasan" src="/assets/img/products/1.png" alt="">
+        </a>
+  `)
+  </script>
+
+
+  <script>
     const lightboxImage = GLightbox({
       selector: ".glightbox"
     });
     const lightboxVideo = GLightbox({
       selector: ".glightbox-video"
     });
+    console.log(document.querySelector("#rate-media"))
   </script>
+
+
 
 </body>
 

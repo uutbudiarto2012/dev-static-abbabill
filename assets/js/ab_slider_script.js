@@ -351,3 +351,37 @@ if (btnPlayVideoUlasan) {
 //   console.log(srcVideo)
 // })
 // HANDLE POPUP MEDIA ULASAN
+
+
+
+// HANDLE RATING
+
+
+
+const starWrapper = $(".star-wrapper button")
+const starRating = $("#ratingCount")
+if(starWrapper){
+  starWrapper.on("click",function(){
+    starRating.val($(this).data("count"))
+    $(".star-wrapper button i").removeClass("selected")
+    for (let i = 0; i < starRating.val(); i++) {
+      starWrapper[i].querySelector("i").classList.add("selected")
+    }
+  })
+}
+
+const labelImage = document.querySelectorAll(".labelImage")
+if(labelImage){
+
+  labelImage.forEach(item => {
+    const imgPreview = item.querySelector('img')
+    const inputImage = item.querySelector('input')
+    inputImage.addEventListener("change",function(){
+      const [file] = this.files
+      imgPreview.setAttribute("src",URL.createObjectURL(file))
+    })
+    
+  });
+  
+}
+// HANDLE RATING

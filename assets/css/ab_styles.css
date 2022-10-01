@@ -2161,6 +2161,59 @@ footer .footer-item .ill-01 .ill-footer-left {
   display: none;
 }
 
+.modalReview .modal-body .star-wrapper {
+  padding: 10px 0;
+  display: flex;
+}
+.modalReview .modal-body .star-wrapper button {
+  background-color: transparent;
+  border: none;
+}
+.modalReview .modal-body .star-wrapper button i {
+  color: #888;
+  font-size: 22px;
+}
+.modalReview .modal-body .star-wrapper button i.selected {
+  color: #ffcf57;
+}
+.modalReview .modal-body .rating-message .message {
+  width: 100%;
+  border: 1px solid #EEE;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  resize: none;
+}
+.modalReview .modal-body .rating-message .message:focus {
+  border: 1px solid #DDD;
+}
+.modalReview .modal-body .rating-media-wrapper {
+  display: flex;
+}
+.modalReview .modal-body .rating-media-wrapper .labelImage {
+  border: 2px dashed #DDD;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalReview .modal-body .rating-media-wrapper .labelImage .media {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modalReview .modal-body .rating-media-wrapper .labelImage input {
+  display: none;
+}
+
+.chating-wrapper {
+  min-height: 80vh;
+  position: relative;
+}
+
 .chat-message-item {
   display: flex;
   align-items: flex-end;

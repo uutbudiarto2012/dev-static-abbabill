@@ -2713,7 +2713,79 @@ footer {
   }
 }
 
+.modalReview {
+
+  .modal-body {
+
+    .star-wrapper {
+      padding: 10px 0;
+      display: flex;
+
+      button {
+        background-color: transparent;
+        border: none;
+
+        i {
+          color: #888;
+          font-size: 22px;
+
+          &.selected {
+            color: #ffcf57;
+          }
+        }
+      }
+    }
+
+    .rating-message {
+      .message {
+        width: 100%;
+        border: 1px solid #EEE;
+        outline: none;
+        padding: 5px;
+        border-radius: 5px;
+        resize: none;
+
+        &:focus {
+          border: 1px solid #DDD;
+
+        }
+      }
+    }
+
+    .rating-media-wrapper {
+      display: flex;
+
+      .labelImage {
+        border: 2px dashed #DDD;
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+        margin-right: 8px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .media {
+          object-fit: contain;
+        }
+
+        input {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
 // chat-message-item
+
+.chating-wrapper {
+  min-height: 80vh;
+  position: relative;
+}
+
 .chat-message-item {
   display: flex;
   align-items: flex-end;
