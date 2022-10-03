@@ -209,8 +209,6 @@ if (btnMenuOpenSideCategory) {
 
 
 // DETAIL
-
-
 var swiperThumbs = new Swiper(".thumbsSwipper", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -227,16 +225,6 @@ var swiper2 = new Swiper(".mainSwipper", {
     swiper: swiperThumbs,
   },
 });
-
-// if (window.innerWidth <= 576) {
-
-//   var swiperThumbs = new Swiper(".mainVarianSwipper", {
-//     spaceBetween: 5,
-//     slidesPerView: 3,
-//     freeMode: true,
-//     watchSlidesProgress: true,
-//   });
-// }
 
 var init = false;
 function swiperMainVar() {
@@ -278,7 +266,6 @@ window.addEventListener("resize", swiperSubVar);
 
 
 // mainVarianSwipper
-
 const inputCountBuy = document.querySelector(".input-count-buy");
 const inputCountWishlist = document.querySelector(".input-count-buy-for-wishlist");
 const fixQTY = document.querySelector("#fix_qty");
@@ -311,11 +298,22 @@ if (inputCountBuy) {
 const itemVarMains = document.querySelectorAll(".item-var-main")
 if (itemVarMains) {
   const chVarian = document.querySelector(".child-varian")
+  const infoSelectedVarian = document.querySelector("#info-selected-varian .item .var-2")
+  const itemVarChild = document.querySelectorAll(".item-var-child")
+
   itemVarMains.forEach(itemVarMain => {
     itemVarMain.addEventListener("click", function () {
       if (chVarian) {
         chVarian.classList.remove("d-none")
+        infoSelectedVarian.innerText = ''
       }
+    })
+  });
+
+  
+  itemVarChild.forEach(iCh => {
+    iCh.addEventListener("click",function(){
+      infoSelectedVarian.innerText = chVarian.querySelector(".header").innerText + " " + iCh.innerText
     })
   });
 
@@ -325,13 +323,18 @@ if (itemVarMains) {
 
 // HANDLE SLIDE VARIAN SELECTED
 const itemVarMain = document.querySelectorAll(".item-var-main")
+const infoSelectedVarian = document.querySelector("#info-selected-varian .item .var-1")
+
+const varianBoxInfo = document.querySelector(".action-boxes.main-varian .header")
 if (itemVarMain.length > 0) {
   itemVarMain.forEach(item => {
     item.addEventListener("click", function () {
       const btnVarian = item.getAttribute("data-varian")
       const t = document.querySelector(".mainSwipper .swiper-slide.swiper-slide-active img")
       t && t.setAttribute("src", btnVarian)
-
+      if(varianBoxInfo){
+        infoSelectedVarian.innerText = varianBoxInfo.innerText + " " + item.innerText
+      }
     })
   });
 }
