@@ -374,11 +374,16 @@ const labelImage = document.querySelectorAll(".labelImage")
 if(labelImage){
 
   labelImage.forEach(item => {
-    const imgPreview = item.querySelector('img')
+    const imgPreview = item.querySelector('.media-preview')
     const inputImage = item.querySelector('input')
     inputImage.addEventListener("change",function(){
+      const v = item.querySelector('video')
+      if(v){
+        v.poster = ""
+      }
       const [file] = this.files
       imgPreview.setAttribute("src",URL.createObjectURL(file))
+
     })
     
   });
