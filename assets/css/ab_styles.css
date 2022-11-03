@@ -860,6 +860,7 @@ body.hiddenFlow {
   display: flex;
   align-items: center;
   border-radius: 5px;
+  z-index: 20;
 }
 .ab_card_t .count-show span {
   font-size: 12px;
@@ -867,6 +868,7 @@ body.hiddenFlow {
 }
 .ab_card_t .thumbs {
   height: 200px;
+  position: relative;
 }
 .ab_card_t .thumbs img {
   width: 100%;
@@ -878,6 +880,7 @@ body.hiddenFlow {
   height: 100px;
   padding: 5px;
   display: flex;
+  flex: 1;
   flex-direction: column;
   position: absolute;
   bottom: 0;
@@ -1074,6 +1077,80 @@ body.hiddenFlow {
 .banner-section .link-banner img {
   border-radius: 8px;
   width: 100%;
+}
+
+.tracking-wrapper .left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+.tracking-wrapper .left .header {
+  font-size: 20px;
+}
+.tracking-wrapper .left .receiver {
+  color: #232323;
+}
+.tracking-wrapper .left .receiver .name,
+.tracking-wrapper .left .receiver .phone {
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+}
+.tracking-wrapper .left .receiver .address {
+  font-size: 12px;
+  color: #575757;
+  margin-top: 5px;
+}
+.tracking-wrapper .right .resi h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.tracking-wrapper .right .resi p {
+  font-size: 14px;
+  color: #575757;
+}
+.tracking-wrapper .track-line {
+  border-left: 1px solid #888;
+  padding-left: 10px;
+}
+@media (main-width: 768px) {
+  .tracking-wrapper .track-line .track-item {
+    display: flex;
+  }
+}
+.tracking-wrapper .track-line .track-item.active::before {
+  background-color: #ff8400;
+}
+.tracking-wrapper .track-line .track-item.active .time {
+  color: #ff8400;
+}
+.tracking-wrapper .track-line .track-item.active .track-right p {
+  color: #ff8400;
+}
+.tracking-wrapper .track-line .track-item::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background-color: #888;
+  left: -15px;
+  top: 15px;
+  border-radius: 50%;
+}
+.tracking-wrapper .track-line .track-item .track-left {
+  width: 200px;
+  position: relative;
+}
+.tracking-wrapper .track-line .track-item .track-left .time {
+  font-size: 14px;
+}
+.tracking-wrapper .track-line .track-item .track-right {
+  flex: 1;
+}
+.tracking-wrapper .track-line .track-item .track-right p {
+  font-size: 13px;
+  color: #575757;
 }
 
 footer {
@@ -1768,6 +1845,10 @@ footer .footer-item .ill-01 .ill-footer-left {
   color: #fff;
   background-color: #ff8400;
 }
+.detail-product .action-boxes .colors .item-var-main.active {
+  color: #fff;
+  background-color: #ff8400;
+}
 .detail-product .action-boxes .colors .item-var-child {
   border: 1px solid #f79c3a;
   min-width: 50px;
@@ -1792,6 +1873,10 @@ footer .footer-item .ill-01 .ill-footer-left {
   background-color: #ff8400;
 }
 .detail-product .action-boxes .colors .item-var-child:focus {
+  color: #fff;
+  background-color: #ff8400;
+}
+.detail-product .action-boxes .colors .item-var-child.active {
   color: #fff;
   background-color: #ff8400;
 }

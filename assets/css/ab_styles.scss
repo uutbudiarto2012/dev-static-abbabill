@@ -1043,6 +1043,7 @@ body.hiddenFlow {
     display: flex;
     align-items: center;
     border-radius: 5px;
+    z-index: 20;
 
     span {
       font-size: 12px;
@@ -1052,6 +1053,7 @@ body.hiddenFlow {
 
   .thumbs {
     height: 200px;
+    position: relative;
 
     img {
       width: 100%;
@@ -1064,6 +1066,7 @@ body.hiddenFlow {
     height: 100px;
     padding: 5px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     position: absolute;
     bottom: 0;
@@ -1299,6 +1302,108 @@ body.hiddenFlow {
     img {
       border-radius: 8px;
       width: 100%;
+    }
+  }
+}
+
+.tracking-wrapper {
+
+  .left {
+    position: sticky;
+    top: 100px;
+
+    .header {
+      font-size: 20px;
+    }
+
+    .receiver {
+      color: #232323;
+
+      .name,
+      .phone {
+        font-size: 14px;
+        display: block;
+        font-weight: 500;
+      }
+
+      .address {
+        font-size: 12px;
+        color: #575757;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .right {
+    .resi {
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 14px;
+        color: #575757;
+      }
+    }
+  }
+
+  .track-line {
+    border-left: 1px solid #888;
+    padding-left: 10px;
+
+    .track-item {
+      @media (main-width:768px) {
+        display: flex;
+
+      }
+
+      &.active {
+        &::before {
+          background-color: #ff8400;
+        }
+
+        .time {
+          color: #ff8400;
+        }
+
+        .track-right {
+          p {
+            color: #ff8400;
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: relative;
+        height: 10px;
+        width: 10px;
+        background-color: #888;
+        left: -15px;
+        top: 15px;
+        border-radius: 50%;
+      }
+
+      .track-left {
+        width: 200px;
+        position: relative;
+
+
+        .time {
+          font-size: 14px;
+        }
+      }
+
+      .track-right {
+        flex: 1;
+
+        p {
+          font-size: 13px;
+          color: #575757;
+        }
+      }
     }
   }
 }
@@ -2173,6 +2278,11 @@ footer {
           color: #fff;
           background-color: #ff8400;
         }
+
+        &.active {
+          color: #fff;
+          background-color: #ff8400;
+        }
       }
 
       .item-var-child {
@@ -2200,6 +2310,11 @@ footer {
         }
 
         &:focus {
+          color: #fff;
+          background-color: #ff8400;
+        }
+
+        &.active {
           color: #fff;
           background-color: #ff8400;
         }

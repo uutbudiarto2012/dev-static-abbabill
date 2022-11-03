@@ -300,9 +300,11 @@ if (itemVarMains) {
   const chVarian = document.querySelector(".child-varian")
   const infoSelectedVarian = document.querySelector("#info-selected-varian .item .var-2")
   const itemVarChild = document.querySelectorAll(".item-var-child")
-
   itemVarMains.forEach(itemVarMain => {
     itemVarMain.addEventListener("click", function () {
+      itemVarMains.forEach(i => i.classList.remove("active"))
+      // itemVarChild.forEach(i => i.classList.remove("active"))
+      itemVarMain.classList.add("active")
       if (chVarian) {
         chVarian.classList.remove("d-none")
         infoSelectedVarian.innerText = ''
@@ -310,9 +312,13 @@ if (itemVarMains) {
     })
   });
 
-  
+
   itemVarChild.forEach(iCh => {
-    iCh.addEventListener("click",function(){
+    iCh.addEventListener("click", function () {
+      if (itemVarChild) {
+        itemVarChild.forEach(i => i.classList.remove("active"))
+      }
+      iCh.classList.add("active")
       infoSelectedVarian.innerText = chVarian.querySelector(".header").innerText + " " + iCh.innerText
     })
   });
@@ -332,7 +338,7 @@ if (itemVarMain.length > 0) {
       const btnVarian = item.getAttribute("data-varian")
       const t = document.querySelector(".mainSwipper .swiper-slide.swiper-slide-active img")
       t && t.setAttribute("src", btnVarian)
-      if(varianBoxInfo){
+      if (varianBoxInfo) {
         infoSelectedVarian.innerText = varianBoxInfo.innerText + " " + item.innerText
       }
     })
@@ -363,8 +369,8 @@ if (btnPlayVideoUlasan) {
 
 const starWrapper = $(".star-wrapper button")
 const starRating = $("#ratingCount")
-if(starWrapper){
-  starWrapper.on("click",function(){
+if (starWrapper) {
+  starWrapper.on("click", function () {
     starRating.val($(this).data("count"))
     $(".star-wrapper button i").removeClass("selected")
     for (let i = 0; i < starRating.val(); i++) {
@@ -374,22 +380,22 @@ if(starWrapper){
 }
 
 const labelImage = document.querySelectorAll(".labelImage")
-if(labelImage){
+if (labelImage) {
 
   labelImage.forEach(item => {
     const imgPreview = item.querySelector('.media-preview')
     const inputImage = item.querySelector('input')
-    inputImage.addEventListener("change",function(){
+    inputImage.addEventListener("change", function () {
       const v = item.querySelector('video')
-      if(v){
+      if (v) {
         v.poster = ""
       }
       const [file] = this.files
-      imgPreview.setAttribute("src",URL.createObjectURL(file))
+      imgPreview.setAttribute("src", URL.createObjectURL(file))
 
     })
-    
+
   });
-  
+
 }
 // HANDLE RATING
