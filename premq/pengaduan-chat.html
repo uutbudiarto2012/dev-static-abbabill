@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#f7bb7a" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/ab_styles.css" />
+
+  <title>Abbabill</title>
+</head>
+
+<body>
+  <nav class="ab_main_nav">
+    <div class="ab_top_nav">
+      <div class="container">
+        <div class="menus">
+          <div class="left">
+            <span class="d-none d-md-block">Download App</span>
+            <a href="" class="_icon_download_app">
+              <i class="bi bi-google-play"></i>
+            </a>
+            <a href="" class="_icon_download_app">
+              <i class="bi bi-apple"></i>
+            </a>
+          </div>
+          <div class="right">
+            <div class="menu">
+              <!-- <div class="item">
+                  <a href="#" class="link">
+                    <div class="_ic">
+                      <div class="badge_ic"></div>
+                      <i class="bi bi-bell"></i>
+                    </div>
+                    <span class="d-none d-md-flex">Notifikasi</span>
+                  </a>
+                </div> -->
+              <!-- <div class="mx-1">|</div> -->
+              <div class="item">
+                <a href="#" class="link">
+                  <div class="_ic">
+                    <i class="bi bi-question-circle"></i>
+                  </div>
+                  <span class="d-none d-md-flex">Bantuan</span>
+                </a>
+              </div>
+              <div class="mx-1">|</div>
+              <div class="item">
+                <span>Ikuti Kami</span>
+                <a href="#" class="ms-1"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="ms-1"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="ms-1"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ab_bottom_nav">
+      <div class="container">
+        <div class="menus">
+          <div class="left">
+            <a href="index.html" class="logo">
+              <img class="logo-full d-none d-md-block" src="/assets/img/main_logo.png" alt="" />
+              <img class="logo-img d-block d-md-none" src="/assets/img/logo-img.png" alt="" />
+            </a>
+          </div>
+          <div class="center">
+            <div class="search-wrapper">
+              <input type="text" placeholder="cari..." />
+              <button class="ic_search">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <!-- isLoggedIn === FALSE -->
+            <!-- <div
+                class="menu-right auth-wrapper d-none d-md-flex justify-content-end align-items-center"
+              >
+                <button
+                  class="auth login"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Masuk
+                </button>
+                <a href="#" class="auth register">Daftar</a>
+              </div> -->
+            <!-- isLoggedIn === FALSE -->
+
+            <!-- isLoggedIn === TRUE -->
+            <div class="menu-right loggedIn">
+              <a href="#" class="item d-none d-lg-flex">
+                <div class="_ic_box">
+                  <div class="count-item">88</div>
+                  <i class="bi bi-heart-fill"></i>
+                </div>
+              </a>
+              <div class="item">
+                <div class="dropdown cart-dropdown">
+                  <a class="_ic_box" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="count-item">2</div>
+                    <i class="bi bi-cart-fill"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end mt-3">
+                    <div class="cart-body">
+                      <!-- IS CART !EMPTY -->
+                      <div class="cart-item">
+                        <div class="img-box">
+                          <img src="/assets/img/products/1.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <span class="name">
+                            Lorem ipsum dolor sit amet consectetur...
+                          </span>
+                          <span class="d-block price">Rp 100.000</span>
+                          <span class="count">5 Produk</span>
+                        </div>
+                      </div>
+                      <div class="cart-item">
+                        <div class="img-box">
+                          <img src="/assets/img/products/2.png" alt="" />
+                        </div>
+                        <div class="info">
+                          <span class="name">
+                            Lorem ipsum dolor sit amet consectetur...
+                          </span>
+                          <span class="d-block price">Rp 100.000</span>
+                          <span class="count">5 Produk</span>
+                        </div>
+                      </div>
+                      <!-- IS CART !EMPTY -->
+
+                      <!-- IS CART EMPTY -->
+                      <!-- <div class="cart-empty">
+                          <img src="/assets/img/logo-img.png" alt="logo" />
+                          <span>Keranjang Kosong</span>
+                        </div> -->
+                      <!-- IS CART EMPTY -->
+                    </div>
+
+                    <!-- IS CART EMPTY ADD class d-none -->
+                    <div class="cart-footer">
+                      <a href="#" class="show-cart">Lihat Keranjang</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex item">
+                <div class="dropdown">
+                  <a href="#" class="profile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="/assets/img/default_user.png" alt="" />
+                    <span>Jhon Paul Ivan</span>
+                  </a>
+                  <ul class="dropdown-menu mt-3">
+                    <li>
+                      <a class="dropdown-item mb-2" href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item mb-2" href="pesanan.html">Pesanan</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item mb-2" href="pengaturan.html">Pengaturan</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item mb-2 d-flex justify-content-between" type="submit" onclick="logout()">
+                        <span>Logout</span>
+                        <i class="bi bi-box-arrow-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- isLoggedIn === TRUE -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade modal-login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body body-modal-login">
+          <form action="">
+            <div class="form-input-auth">
+              <input type="email" placeholder="email" class="input" />
+              <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="form-input-auth">
+              <input type="password" placeholder="password" class="input" />
+              <i class="bi bi-key"></i>
+            </div>
+            <button type="submit" class="btn-submit-auth">LOGIN</button>
+          </form>
+          <div class="suggest py-3 text-center">
+            <div>
+              Belum punya akun? <a href=""><b>Daftar</b></a>
+            </div>
+            <div><a href="">Lupa password</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content product-content">
+    <section class="profile py-3">
+      <div class="container-fluid">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="account-welcome">
+              <div class="img-wrapper">
+                <img src="/assets/img/default_user.png" alt="user" />
+              </div>
+              <div class="greating-box">
+                <div class="left">
+                  <span class="d-block text">Hello</span>
+                  <span class="username">Nama Akun</span>
+                </div>
+                <div class="right d-flex d-md-none">
+                  <button class="btn-toggle-profile-menu">
+                    <i class="bi bi-list"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="sidemenu">
+              <div class="menu-body menu-profile">
+                <a href="profile.html" class="menu-item">
+                  <i class="bi bi-person"></i>
+                  <span>Informasi Akun</span>
+                </a>
+                <a href="pesanan.html" class="menu-item">
+                  <i class="bi bi-archive"></i>
+                  <span>Pesananku</span>
+                </a>
+                <a href="alamat.html" class="menu-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Alamat</span>
+                </a>
+                <a href="favorite.html" class="menu-item">
+                  <i class="bi bi-heart"></i>
+                  <span>Favorit</span>
+                </a>
+                <a href="pengaduan.html" class="menu-item active">
+                  <i class="bi bi-headset"></i>
+                  <span>Pengaduan</span>
+                </a>
+                <a href="pengaturan.html" class="menu-item">
+                  <i class="bi bi-sliders"></i>
+                  <span>Pengaturan</span>
+                </a>
+                <a href="#" class="menu-item">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Keluar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="profile-info-wrapper">
+              <div class="chating-wrapper">
+                <!-- <div class="chat-message-item">
+                  <span class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.
+                  </span>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item">
+                  <div class="text">
+                    Quaerat, mollitia.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur harum,
+                    exercitationem, culpa possimus placeat ratione ab atque vitae modi obcaecati ullam. Necessitatibus,
+                    ipsa saepe ab ea aliquam distinctio quibusdam quod illo itaque repellat facere veniam cupiditate
+                    vero. Quis illo incidunt doloremque laborum repudiandae debitis voluptas molestiae doloribus, ea
+                    dignissimos non, iste ducimus libero nemo ad reprehenderit sint adipisci officiis maxime animi?
+                    Saepe aspernatur delectus ipsa necessitatibus illo nam distinctio ab, reprehenderit molestiae quas,
+                    nostrum ullam est itaque minima dicta, recusandae adipisci quisquam! Adipisci sit quidem rerum magni
+                    quia aliquid id libero iure aspernatur quasi ut earum, natus accusantium illo accusamus numquam
+                    necessitatibus et architecto. Doloribus odit minus, velit molestias facere perferendis impedit atque
+                    inventore libero deserunt cum esse excepturi tempora minima quo, laborum numquam exercitationem!
+                    Illo perspiciatis eveniet earum quis obcaecati eligendi minima consequuntur necessitatibus neque,
+                    accusamus blanditiis labore explicabo. Aspernatur eligendi et praesentium, minus rem recusandae
+                    expedita? Sequi perferendis qui officiis quas. Nemo officiis animi asperiores ipsam fugiat quam odit
+                    quaerat explicabo nesciunt sunt maiores aliquam nobis dicta voluptatem eaque soluta, tempora
+                    quisquam fugit sint quod. Dolores optio in labore quibusdam, nemo, exercitationem assumenda quia
+                    totam praesentium deleniti, nulla rem? Animi dolor aliquid veniam repudiandae reiciendis, culpa
+                    assumenda!
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item isMe">
+                  <div class="text">
+                    elit. Quaerat, mollitia.
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item">
+                  <span class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.
+                  </span>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item">
+                  <div class="text">
+                    Quaerat, mollitia.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur harum,
+                    exercitationem, culpa possimus placeat ratione ab atque vitae modi obcaecati ullam. Necessitatibus,
+                    ipsa saepe ab ea aliquam distinctio quibusdam quod illo itaque repellat facere veniam cupiditate
+                    vero. Quis illo incidunt doloremque laborum repudiandae debitis voluptas molestiae doloribus, ea
+                    dignissimos non, iste ducimus libero nemo ad reprehenderit sint adipisci officiis maxime animi?
+                    Saepe aspernatur delectus ipsa necessitatibus illo nam distinctio ab, reprehenderit molestiae quas,
+                    nostrum ullam est itaque minima dicta, recusandae adipisci quisquam! Adipisci sit quidem rerum magni
+                    quia aliquid id libero iure aspernatur quasi ut earum, natus accusantium illo accusamus numquam
+                    necessitatibus et architecto. Doloribus odit minus, velit molestias facere perferendis impedit atque
+                    inventore libero deserunt cum esse excepturi tempora minima quo, laborum numquam exercitationem!
+                    Illo perspiciatis eveniet earum quis obcaecati eligendi minima consequuntur necessitatibus neque,
+                    accusamus blanditiis labore explicabo. Aspernatur eligendi et praesentium, minus rem recusandae
+                    expedita? Sequi perferendis qui officiis quas. Nemo officiis animi asperiores ipsam fugiat quam odit
+                    quaerat explicabo nesciunt sunt maiores aliquam nobis dicta voluptatem eaque soluta, tempora
+                    quisquam fugit sint quod. Dolores optio in labore quibusdam, nemo, exercitationem assumenda quia
+                    totam praesentium deleniti, nulla rem? Animi dolor aliquid veniam repudiandae reiciendis, culpa
+                    assumenda!
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item isMe">
+                  <div class="text">
+                    elit. Quaerat, mollitia.
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item">
+                  <span class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.
+                  </span>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item">
+                  <div class="text">
+                    Quaerat, mollitia.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur harum,
+                    exercitationem, culpa possimus placeat ratione ab atque vitae modi obcaecati ullam. Necessitatibus,
+                    ipsa saepe ab ea aliquam distinctio quibusdam quod illo itaque repellat facere veniam cupiditate
+                    vero. Quis illo incidunt doloremque laborum repudiandae debitis voluptas molestiae doloribus, ea
+                    dignissimos non, iste ducimus libero nemo ad reprehenderit sint adipisci officiis maxime animi?
+                    Saepe aspernatur delectus ipsa necessitatibus illo nam distinctio ab, reprehenderit molestiae quas,
+                    nostrum ullam est itaque minima dicta, recusandae adipisci quisquam! Adipisci sit quidem rerum magni
+                    quia aliquid id libero iure aspernatur quasi ut earum, natus accusantium illo accusamus numquam
+                    necessitatibus et architecto. Doloribus odit minus, velit molestias facere perferendis impedit atque
+                    inventore libero deserunt cum esse excepturi tempora minima quo, laborum numquam exercitationem!
+                    Illo perspiciatis eveniet earum quis obcaecati eligendi minima consequuntur necessitatibus neque,
+                    accusamus blanditiis labore explicabo. Aspernatur eligendi et praesentium, minus rem recusandae
+                    expedita? Sequi perferendis qui officiis quas. Nemo officiis animi asperiores ipsam fugiat quam odit
+                    quaerat explicabo nesciunt sunt maiores aliquam nobis dicta voluptatem eaque soluta, tempora
+                    quisquam fugit sint quod. Dolores optio in labore quibusdam, nemo, exercitationem assumenda quia
+                    totam praesentium deleniti, nulla rem? Animi dolor aliquid veniam repudiandae reiciendis, culpa
+                    assumenda!
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div>
+                <div class="chat-message-item isMe">
+                  <div class="text">
+                    elit. Quaerat, mollitia.
+                  </div>
+                  <div class="avatar">
+                    <img src="/assets/img/default_user.png" alt="user">
+                  </div>
+                </div> -->
+              </div>
+              <div class="chat-form">
+                <form action="">
+                  <textarea placeholder="tulis pesan..." class="cht-input" name="message" id="message"
+                    rows="1"></textarea>
+                  <button class="btn-send-cht">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </form>
+              </div>
+
+              <!-- <label for="1">
+                <img src="" alt="preview" class="preview-1">
+                <input type="file" class="" name="" id="1">
+              </label> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="modalCreateComplain" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Form pengaduan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="mb-3">
+              <label for="kategori" class="mb-2">Kategori</label>
+              <select placeholder="kategori" id="kategori" class="form-custom-input">
+                <option value="">Kategori</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="mb-3">Subject</label>
+              <input placeholder="subject" id="subject" class="form-custom-input error" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="mb-3">Subject</label>
+              <textarea placeholder="message" id="message" class="form-custom-input" rows="3"></textarea>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-lg-6">
+                <button type="button" class="btn-ab-buy py-2">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDetailComplain" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detail pengaduan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="mb-3">
+              <label for="kategori" class="mb-2">Kategori</label>
+              <input disabled value="kategorinya" class="form-custom-input" />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="mb-2">Subject</label>
+              <input disabled value="cc nya" class="form-custom-input" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="mb-2">Message</label>
+              <textarea placeholder="message" class="form-custom-input" rows="3" disabled>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, animi?</textarea>
+            </div>
+            <div class="status"><small>Sedang Proses</small></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/assets/js/ab_slider_script.js"></script>
+</body>
+
+</html>

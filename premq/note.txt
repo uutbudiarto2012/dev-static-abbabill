@@ -1,0 +1,64 @@
+- footer maksimal 2 (kanan ujung jadi improve) 1) = DONE
+- tambah illustrasi footer = DOME
+- pading card 2) = DONE
+- banner all produk = DONE
+- paginantion = DONE
+- tambah halaman product-store = DONE
+  = https://dev-static-abbabill.vercel.app/product-store.html
+- detail produk pas pilihan varian persegi panjang 3) = DONE
+- ulasan ada gambar (max 3), video(1), pagination 4) = DONE
+
+- pengaduan (balasan) = DONE
+- popup pengaduan fieldnya kurang = DONE
+- tombol pengaduan di kiri = DONE
+  https://dev-static-abbabill.vercel.app/pengaduan-chat.html
+
+- keranjang, subtotal pindah ke kanan = DONE
+- rincian & detail pembayaran (manual dan qris)= DONE
+  - https://dev-static-abbabill.vercel.app/order-detail-pembayaran-otomatis.html
+  - https://dev-static-abbabill.vercel.app/order-detail-pembayaran-manual.html
+
+
+Weekly Report 30 September 2022
+
+=== GLOBAL ===
+1. Fixing bug frontend dan backend
+2. Sharing knowledge (dari adit ke uut)
+3. Persiapan templates admin dan merancang UI buyer (v-2)
+4. Imolementasi API & Mobile (detail product)
+5. Fixing bug get product (mobile)
+
+
+== UUT ==
+1. mempelajari config server dari adit (on progress)
+2. membuat repositori bitbucket baru
+3. fixing bug frontend (varian, chat complain)
+4. mempelajari api idcloudhost untuk super system
+5. prepare templates ( persiapan v-2)
+
+
+== MULKI ==
+1. fixing bug button hapusnya di keranjang
+2. membuat tambah total quantity
+3. fixing bug complaint chat
+4. push source code admin ke repositori baru
+5. push source code seller ke repositori baru
+6. push source code reseller ke repositori baru
+
+== RYAN ==
+1. fixing bug click varian image
+2. fixing bug image ulasan user (glightbox)
+3. fixing bug total harga ( order detail)
+4. fixing bug total quantity ( order detail)
+5. tambah button beri ulasan
+6. membuat fungsi beri ulasan
+
+== WAHYU ==
+1. Mengerjakan implementasi API di halaman detail product
+	- Menampilkan gambar product
+	- Menampikan informasi harga
+	- Menampilkan varian product yang 1 varian maupun yang 2 varian
+	- Menampikan description, spesifikasi
+	- Menampilkan ulasan(masih belum selesai soalnya tidak ada contoh datanya)
+	- Menampilkan rekomendasi product
+2. Memperbaiki get product by category parent
